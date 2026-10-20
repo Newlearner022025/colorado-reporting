@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-20T10:50:51.557Z",
+  "maj": "2026-10-20T11:23:09.513Z",
   "action": {
     "cours": 73,
     "variation": -4.24
@@ -188,6 +188,422 @@
       "extrait": null,
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/0.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/actualites/mesures-anti-covid-19-prises-par-colorado"
+    },
+    {
+      "date": "2019-12-23",
+      "categorie": "Entreprise",
+      "titre": "Colorado se distingue une 2ème fois par Vigeo Eiris",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/certificat-top-performers_rse_580x330_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-se-distingue-une-2eme-fois-par-vigeo-eiris"
+    },
+    {
+      "date": "2019-11-20",
+      "categorie": "Événements",
+      "titre": "Salon project qatar - qatar",
+      "extrait": "La vision nationale Qatar 2030 et la Coupe du Monde de la FIFA 2022 sont des moteurs de croissance majeurs pour l’industrie de la construction de ce pays. Le secteur du...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/salon_qatar-compressed.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/salon-project-qatar-qatar"
+    },
+    {
+      "date": "2019-11-11",
+      "categorie": "Entreprise",
+      "titre": "Label OR définitif \"Entreprise sans Tabac\"",
+      "extrait": "COLORADO a reçu le label « Or » définitif en tant qu’« Entreprise sans tabac» de la part de la fondation Lalla Salma pour la prévention et traitement des cancers.Cette...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/colorado_sans_tabac_label_or.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/label-or-definitif-entreprise-sans-tabac"
+    },
+    {
+      "date": "2019-10-31",
+      "categorie": "Événements",
+      "titre": "Participation à la 2ème édition du \"MADE IN MOROCCO\" de l'aSMEX",
+      "extrait": "Le cycle des rencontres mensuelles « Made in Morocco» a été initié par l’ASMEX (Association Marocaine des Exportateurs) pour permettre aux dirigeants et responsables de grandes...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/asmex.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-la-2eme-edition-du-made-morocco-de-lasmex"
+    },
+    {
+      "date": "2019-10-14",
+      "categorie": "Certifications",
+      "titre": "Renouvellement de la certification ECOLABEL pour toute la gamme de produits",
+      "extrait": "Grâce à sa stratégie soutenue en matière de Recherche & Développement et à l’expertise de ses équipes,COLORADO dispose depuis plusieurs années d’une gamme écologique...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/ecolabel_rapport.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-de-la-certification-ecolabel-pour-toute-la-gamme-de-produits"
+    },
+    {
+      "date": "2019-06-24",
+      "categorie": "Événements",
+      "titre": "Salon sencon - senegal",
+      "extrait": "SENCON est l’événement incontournable pour les matériaux de construction et l’infrastructurede l’Afrique de l’Ouest. Les visiteurs et les exposants sont en augmentation...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/salon_senegal.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/salon-sencon-senegal"
+    },
+    {
+      "date": "2019-05-22",
+      "categorie": "Certifications",
+      "titre": "Triple certification QSE",
+      "extrait": "Colorado a réussi avec succès l’audit de suivi des certifications de son système de...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_iso.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/triple-certification-qse"
+    },
+    {
+      "date": "2019-02-14",
+      "categorie": "Entreprise",
+      "titre": "COLORADO décroche le triple a de coface",
+      "extrait": "Colorado vient d’être certifié triple A pour l’année 2019 par Coface. L’assureur crédit reconfirme ainsi par cette note « la solvabilité et...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-decroche-le-triple-de-coface"
+    },
+    {
+      "date": "2018-12-05",
+      "categorie": "Entreprise",
+      "titre": "COLORADO est fière de renouveler pour la 2ème fois le statut de «contribuable catégorisé »",
+      "extrait": "Colorado...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/contribuable_categorise_actualites.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-est-fiere-de-renouveler-pour-la-2eme-fois-le-statut-de-contribuable-categorise"
+    },
+    {
+      "date": "2018-09-27",
+      "categorie": "Entreprise",
+      "titre": "COLORADO parmi les \"top performances RSE\"",
+      "extrait": "COLORADO vient de décrocher, le 27 Septembre, le trophée \"Top Performers 2018\" en Responsabilité Sociale et Environnementale décerné par Vigeo...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/certificat-top-performers_rse_580x330.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-parmi-les-top-performances-rse"
+    },
+    {
+      "date": "2018-06-01",
+      "categorie": "Entreprise",
+      "titre": "COLORADO : entreprise sans tabac 2018",
+      "extrait": "Pour la 5ème année consécutive,...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/tabac-site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-entreprise-sans-tabac-2018"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Finance",
+      "titre": "COLORADO présente ses résultats 2017",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Entreprise",
+      "titre": "Opérateur economique agréé",
+      "extrait": "Après avoir obtenu en 2012, le statut d’Opérateur agréé : simplification douanière,...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/operateur-economique-agree"
+    },
+    {
+      "date": "2018-04-28",
+      "categorie": "Événements",
+      "titre": "COLORADO @ foire de paris",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons à la...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sans-titre-2_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-foire-de-paris"
+    },
+    {
+      "date": "2018-04-05",
+      "categorie": "Certifications",
+      "titre": "Renouvellement des certifications",
+      "extrait": "...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/renouvellement_certifications_actualites.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-des-certifications"
+    },
+    {
+      "date": "2018-02-27",
+      "categorie": "Certifications",
+      "titre": "COLORADO certifie @@@ pour la quatrième année consécutive",
+      "extrait": "COLORADO, leader de la...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/exe_ap_coface_2018_site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifie-pour-la-quatrieme-annee-consecutive"
+    },
+    {
+      "date": "2018-02-22",
+      "categorie": "Entreprise",
+      "titre": "COLORADO @ sencon expo",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sencon-site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-sencon-expo"
+    },
+    {
+      "date": "2018-02-02",
+      "categorie": "Événements",
+      "titre": "COLORADO @ salon de la rénovation - paris",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/salon.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-salon-de-la-renovation-paris"
+    },
+    {
+      "date": "2017-12-27",
+      "categorie": "Entreprise",
+      "titre": "Colorado reçoit le prix du Jury lors des Trophées de la prévention",
+      "extrait": "Colorado a reçu le prix du Jury lors des Trophées de la prévention - Edition 2017 organisés par Wafa Assurance...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/distinction.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-recoit-le-prix-du-jury-lors-des-trophees-de-la-prevention"
+    },
+    {
+      "date": "2017-11-02",
+      "categorie": "Entreprise",
+      "titre": "Colorado @ Batimat de Paris",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/nl-site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-batimat-de-paris"
+    },
+    {
+      "date": "2017-10-03",
+      "categorie": "Entreprise",
+      "titre": "Colorado @ Archibat - Abidjan",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/archibat2.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-archibat-abidjan"
+    },
+    {
+      "date": "2017-09-27",
+      "categorie": "Événements",
+      "titre": "Colorado @ Salon de l'Habitat - Toulouse",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sans-titre-2.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-salon-de-lhabitat-toulouse"
+    },
+    {
+      "date": "2017-07-14",
+      "categorie": "Entreprise",
+      "titre": "Colorado renouvelle son support à Casa mémoire",
+      "extrait": "Colorado renouvelle son support à l'association Casa mémoire. En effet, M. Abed CHAGAR, Directeur Général de COLORADO, leader national de...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/partenariat.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-renouvelle-son-support-casa-memoire"
+    },
+    {
+      "date": "2017-06-21",
+      "categorie": "Entreprise",
+      "titre": "Colorado @ SICABAT",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au salon SICABAT. Ce salon se tiendra du 06 au 09 Juillet 2017 au site SIAO, Ouagadougou.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sicabat.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-sicabat"
+    },
+    {
+      "date": "2017-05-31",
+      "categorie": "Entreprise",
+      "titre": "Colorado, une entreprise sans tabac",
+      "extrait": "Pour la 4ème année consécutive, COLORADO a obtenu le label OR «Entreprise sans tabac» de la Fondation Lalla Salma - Prévention et Traitement des cancers....",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/tabac-site-web_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-une-entreprise-sans-tabac-0"
+    },
+    {
+      "date": "2017-05-10",
+      "categorie": "Entreprise",
+      "titre": "Colorado @ TURKEYBUILD",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au salon TURKEYBUILD. Ce salon se tiendra du 23 au 27 Mai 2017 au TUYAP Fair and Congress Center Buyukcekmece, Istanbul.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/header-turkeybuild.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-turkeybuild"
+    },
+    {
+      "date": "2017-03-17",
+      "categorie": "Entreprise",
+      "titre": "Colorado @ SBIE",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au salon Saudi Building & interior Exhibition.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sbie-site_1.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-sbie"
+    },
+    {
+      "date": "2017-01-25",
+      "categorie": "Événements",
+      "titre": "COLORADO au salon Surface Design2017",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/sfd_site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-au-salon-surface-design2017"
+    },
+    {
+      "date": "2017-01-05",
+      "categorie": "Événements",
+      "titre": "Colorado au salon BAU Munich 2017",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au salon BAU 2017 à Munich. Ce salon se tiendra du 16 au 21 Janvier 2017 au Parc des expositions de Munich.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/bau_salon_2017.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-au-salon-bau-munich-2017"
+    },
+    {
+      "date": "2016-10-10",
+      "categorie": "Événements",
+      "titre": "Participation de Colorado au salon Saudi Build 2016",
+      "extrait": "COLORADO a le...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/saudi_build_image.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-de-colorado-au-salon-saudi-build-2016"
+    },
+    {
+      "date": "2016-08-12",
+      "categorie": "Entreprise",
+      "titre": "COLORADO reclassée au compartiment principal à la bourse de Casablanca:compartiment des grandes entreprises",
+      "extrait": "Au 10/08/2016, COLORADO rejoint les 47 sociétés cotées classées dans le compartiment du marché principal et devient...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/vueaerienneas.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-reclassee-au-compartiment-principal-la-bourse-de-casablancacompartiment-des"
+    },
+    {
+      "date": "2016-05-26",
+      "categorie": "Entreprise",
+      "titre": "‘‘KTA3E L’GARO’’, vidéo pour arrêter la cigarette lancée par la Fondation Lalla Salma.",
+      "extrait": "La campagne de sensibilisation des jeunes contre les méfaits du tabac du 26 Mai au 16 Juin 2016 lancée par la fondation Lalla Salma de prévention et traitement de cancer StopClope-",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/icone_ese_sans_tabac_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/kta3e-lgaro-video-pour-arreter-la-cigarette-lancee-par-la-fondation-lalla-salma-1"
+    },
+    {
+      "date": "2016-05-12",
+      "categorie": "Événements",
+      "titre": "Participation au salon international de la construction CARTHAGE 2016",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au Salon International de la Construction et du Bâtiment CARTHAGE pour sa 13ème édition.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/salon_carthage_colorado_2016_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-international-de-la-construction-carthage-2016"
+    },
+    {
+      "date": "2016-05-03",
+      "categorie": "Événements",
+      "titre": "Participation au salon BATIMATEC 2016 en Alger",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au Salon BATIMATEC, le Salon International Du Bâtiment, Des Matériaux De construction et des Travaux Publics pour la 19ème édition. Ce",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/batimatec_web.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-batimatec-2016-en-alger"
+    },
+    {
+      "date": "2016-04-27",
+      "categorie": "Entreprise",
+      "titre": "Colorado, une entreprise sans tabac",
+      "extrait": "Pour la 3ème année consécutive, COLORADO a obtenu le label OR «Entreprise sans tabac» de la Fondation Lalla Salma - Prévention et Traitement des cancers.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/colorado-prix.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-une-entreprise-sans-tabac"
+    },
+    {
+      "date": "2016-03-22",
+      "categorie": "Événements",
+      "titre": "Participation au salon MOSBUILD 2016 en Russie",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au Mosbuild, le Salon international des matériaux de construction et de finition qui entamera sa 22ème édition. Ce...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/mosbuild_img.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-mosbuild-2016-en-russie"
+    },
+    {
+      "date": "2016-02-24",
+      "categorie": "Événements",
+      "titre": "Participation au salon Farbe Ausbau & Fassade 2016 à Munich",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au FARBE, AUSBAU & FASSADE 2016, le salon leader des thèmes de la peinture, l’aménagement et la protection des...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/farbe.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-farbe-ausbau-fassade-2016-munich"
+    },
+    {
+      "date": "2016-02-01",
+      "categorie": "Événements",
+      "titre": "Participation au salon Surface Design Show 2016 à Londres",
+      "extrait": "COLORADO a le plaisir de vous informer que nous participons au Surface Design Show, le Salon des solutions de surface dans le design et le bâtiment. Ce salon se tiendra du 9 au...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/surface_design_show_940x260_1.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-surface-design-show-2016-londres"
+    },
+    {
+      "date": "2016-01-01",
+      "categorie": "Certifications",
+      "titre": "Colorado certifiée @@@ par la Coface pour la 2ème année consécutive",
+      "extrait": "COLORADO, leader de la peinture au Maroc, a été certifiée « @@@» pour l’année 2016 par la COFACE (Compagnie française d'assurance crédit à l'exportation) pour la 2ème année consécutive.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifi-aaa-par-la-coface"
+    },
+    {
+      "date": "2016-01-01",
+      "categorie": "Événements",
+      "titre": "Participation au salon ARCHIBAT 2015",
+      "extrait": "COLORADO a participé du 01 au 05 Décembre à Abidjan au salon ARCHIBAT – Salon des innovations pour le bâtiment et l'architecture.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/63450_058.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-archibat-2015"
+    },
+    {
+      "date": "2015-12-15",
+      "categorie": "Entreprise",
+      "titre": "Rénovation du showroom Casablanca Zerktouni",
+      "extrait": "Colorado a le plaisir de vous présenter son Showroom Casablanca Zerktouni avec son nouveau look pour faire découvrir à ses visiteurs les nouvelles tendances en peinture dans un...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/ze_13.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renovation-du-showroom-casablanca-zerktouni"
+    },
+    {
+      "date": "2015-11-26",
+      "categorie": "Événements",
+      "titre": "Participation au salon BIG 5 SHOW DUBAI 2015",
+      "extrait": "COLORADO a participé du 23 au 26 Novembre à Dubai au salon BIG 5 SHOW Dubai: Salon international du bâtiment, des matériaux et de l'équipement.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/photos_big_5_novembre_2015_010.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-big-5-show-dubai-2015"
+    },
+    {
+      "date": "2015-11-06",
+      "categorie": "Événements",
+      "titre": "Participation au salon BATIMAT PARIS 2015",
+      "extrait": "COLORADO a participé du 2 au 6 Novembre 2015 à Paris (France) au salon BATIMAT – Salon des innovations pour le bâtiment et l'architecture.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/img_3818.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-batimat-paris-2015"
+    },
+    {
+      "date": "2015-11-01",
+      "categorie": "Entreprise",
+      "titre": "Augmentation du capital de COLORADO de 30 220 520 DH",
+      "extrait": "En novembre 2015, Colorado a procédé à une augmentation de son capital de 30 220 520 DH pour le porter de 90 661 560 DH à 120 882 080 DH et ce par la création et l'émission de...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coins-948603_1920_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/augmentation-du-capital-de-colorado-de-30-220-520-dh"
+    },
+    {
+      "date": "2015-10-29",
+      "categorie": "Événements",
+      "titre": "Participation au salon SAUDI BUILD 2015",
+      "extrait": "COLORADO a participé du 26 au 29 Octobre à Riyadh (Arabie Saoudite) au salon SAUDI BUILD – Salon dédié aux métiers de la construction et du bâtiment.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/img_5048.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-saudi-build-2015"
+    },
+    {
+      "date": "2015-01-14",
+      "categorie": "Entreprise",
+      "titre": "Ouverture du showroom Ain Sebaâ",
+      "extrait": "Colorado inaugure à Ain Sebaâ son 2ème show-room à Casablanca après celui de Zerktouni et le 7ème sur le plan national.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/dsc_0520_2.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/ouverture-du-showroom-ain-sebaa-0"
+    },
+    {
+      "date": "2014-09-14",
+      "categorie": "Entreprise",
+      "titre": "Colorado décroche le statut de « contribuable catégorisé »",
+      "extrait": "En Septembre 2014, COLORADO a pu décrocher le statut de « contribuable catégorisé ».",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/categorisation_fiscale.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/catgorisation-fiscale-2014"
+    },
+    {
+      "date": "2014-06-11",
+      "categorie": "Entreprise",
+      "titre": "Augmentation de capital pour les salariés",
+      "extrait": "Pour accompagner son plan stratégique pour la période 2014 - 2016, COLORADO a procédé en 2014 à une augmentation de capital réservée aux salariés.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/augmentation_de_capital_pour_les_salaries.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/augmentation-de-capital-pour-les-salaris"
+    },
+    {
+      "date": "2014-02-16",
+      "categorie": "Entreprise",
+      "titre": "Convention des cadres",
+      "extrait": "Colorado a réuni le 14, 15 et 16 février tous ses cadres dans un cadre conviviale et chaleureux à Marrakech.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/dsc_7136.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/convention-des-cadres-fvrier-2014"
+    },
+    {
+      "date": "2013-12-10",
+      "categorie": "Certifications",
+      "titre": "COLORADO fête ses 10 ans de certification qualité",
+      "extrait": "COLORADO a fêté ses 10 ans de certification ISO 9001 en décembre 2013. Un engagement de qualité qui a pu être tenu, depuis la mise en place du système en 2003, grâce à la...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/dsc_4175.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-fte-des-10-ans-de-certification-qualit"
+    },
+    {
+      "date": "2013-10-10",
+      "categorie": "Entreprise",
+      "titre": "Catégorisation Douanière",
+      "extrait": "Inspirée des recommandations de l’Organisation Mondiale des Douanes et ayant fait l’objet d’expériences réussies dans certains pays développés, la catégorisation douanière a...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/categorisation_douaniere.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/catgorisation-douanire-2013"
+    },
+    {
+      "date": "2013-09-10",
+      "categorie": "Entreprise",
+      "titre": "Extension de l'usine de DAR BOUAAZZA",
+      "extrait": "L’année 2013 a connu la réalisation de la phase 2 du projet du site de dar bouâazza",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/extention_usine_db_1.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/extension-de-lusine-de-dar-bouaazza"
     }
   ],
   "communiques": [
@@ -197,7 +613,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_semestrielle_au_30-06-2026.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_semestrielle_au_30-06-2026.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2026",
-      "type": "Semestriel",
+      "type": "Communication semestrielle",
       "taille": 2.6
     },
     {
@@ -233,7 +649,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_2025_vf_au_30-06-2025.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/com30062025.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2025",
-      "type": "Semestriel",
+      "type": "Communication semestrielle",
       "taille": 3
     },
     {
@@ -280,6 +696,924 @@
       "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2024",
       "type": "Indicateurs trimestriels",
       "taille": 2.2
+    },
+    {
+      "date": "2024-09-27",
+      "titre": "Communication financière semestrielle au 30-06-20234",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_ca_s1_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_rgs1_24.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-20234",
+      "type": "Communication semestrielle",
+      "taille": 3.4
+    },
+    {
+      "date": "2024-08-15",
+      "titre": "Indicateurs Trimestriels : T2-2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_indt2_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_com_t22024.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2024",
+      "type": "Indicateurs trimestriels",
+      "taille": 2
+    },
+    {
+      "date": "2024-05-17",
+      "titre": "Communiqué post AGM du 15/05/2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cp_ago_15052024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cp_ago150524.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-agm-du-15052024",
+      "type": "Assemblée générale",
+      "taille": 0.5
+    },
+    {
+      "date": "2024-05-14",
+      "titre": "Indicateurs Trimestriels : T1-2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_com_ind_t12024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_ind_1t24.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2024",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.9
+    },
+    {
+      "date": "2024-04-26",
+      "titre": "Communiqué Financier Annuel 2023 : Résultats Annuels",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_communique_financier_2024_25_04.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ig_cf_rfa23_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-annuel-2023-resultats-annuels",
+      "type": "Résultats annuels",
+      "taille": 28.7
+    },
+    {
+      "date": "2024-03-19",
+      "titre": "Communiqué financier : résultats annuels 2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_post_ca_15-03-2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_rt_2023.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2023",
+      "type": "Résultats annuels",
+      "taille": 4.3
+    },
+    {
+      "date": "2024-02-22",
+      "titre": "Indicateurs Trimestriels : T4-2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_communique_22-02-2024_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cp_ind_t4_23.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2023",
+      "type": "Indicateurs trimestriels",
+      "taille": 2.2
+    },
+    {
+      "date": "2023-09-27",
+      "titre": "Communication financière semestrielle au 30-06-2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_1s2023.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/im_cf_1s23.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2023",
+      "type": "Communication semestrielle",
+      "taille": 17.5
+    },
+    {
+      "date": "2023-08-17",
+      "titre": "Indicateurs Trimestriels : T2-2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/vf-communique_t2-2023.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_com_t2_2023.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2023",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.8
+    },
+    {
+      "date": "2023-05-24",
+      "titre": "Communiqué post AGM du 22/05/2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/c_post_agm_220523.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/im_c-agm_230523.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-agm-du-22052023",
+      "type": "Assemblée générale",
+      "taille": 1.3
+    },
+    {
+      "date": "2023-05-17",
+      "titre": "Indicateurs Trimestriels : T1-2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t1_2023.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-t1-2023.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2023",
+      "type": "Indicateurs trimestriels",
+      "taille": 2
+    },
+    {
+      "date": "2023-04-20",
+      "titre": "Communiqué Financier Annuel 2022 : Résultats Annuels",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_resultats_annuels_2022_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-img.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-annuel-2022-resultats-annuels",
+      "type": "Résultats annuels",
+      "taille": 11.9
+    },
+    {
+      "date": "2023-03-27",
+      "titre": "Communiqué financier : résultats annuels 2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fina_2022_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/im_cf_2022.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2022",
+      "type": "Résultats annuels",
+      "taille": 31.1
+    },
+    {
+      "date": "2023-02-21",
+      "titre": "Indicateurs Trimestriels : T4-2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_ind_t4_2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/exe_communique_t4_2022_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2022",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.3
+    },
+    {
+      "date": "2022-11-17",
+      "titre": "Indicateurs Trimestriels : T3-2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t3_2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_t3-2022.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2022",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.5
+    },
+    {
+      "date": "2022-09-30",
+      "titre": "Communication financière semestrielle au 30-06-2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_s1-2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-1s22.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2022",
+      "type": "Communication semestrielle",
+      "taille": 4.9
+    },
+    {
+      "date": "2022-08-17",
+      "titre": "Indicateurs Trimestriels : T2-2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_t2_2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_ind2t22.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2022",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.6
+    },
+    {
+      "date": "2022-06-20",
+      "titre": "Augmentation de capital social a 161 176 110 dh par attribution de nouvelles actions gratuites",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_communique_aug_capital_social.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_aug_k.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/augmentation-de-capital-social-161-176-110-dh-par-attribution-de-nouvelles-actions",
+      "type": "Autre",
+      "taille": 1.9
+    },
+    {
+      "date": "2022-05-17",
+      "titre": "Indicateurs Trimestriels : T1-2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indt1_2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_ind_1t22.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2022",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.6
+    },
+    {
+      "date": "2022-05-04",
+      "titre": "Communiqué post AGM du 29/04/2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_post_agm.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/imgfc.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-agm-du-29042022",
+      "type": "Assemblée générale",
+      "taille": 1.7
+    },
+    {
+      "date": "2022-04-22",
+      "titre": "Communiqué Financier Annuel 2021 : Résultats Annuels",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_com_rap_fin_2021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/im_com_rapp_fin_21_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-annuel-2021-resultats-annuels",
+      "type": "Résultats annuels",
+      "taille": 13
+    },
+    {
+      "date": "2022-03-24",
+      "titre": "Communiqué financier : résultats annuels 2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_cf_post_ca_du22-3-2022_vf.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_postca.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2021",
+      "type": "Résultats annuels",
+      "taille": 1.6
+    },
+    {
+      "date": "2022-02-26",
+      "titre": "Indicateurs Trimestriels : T4-2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_t4_2021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_t4_2021.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2021",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.1
+    },
+    {
+      "date": "2021-11-15",
+      "titre": "Indicateurs Trimestriels : T3-2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateuts_t3_2021_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_3t2021_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2021",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.6
+    },
+    {
+      "date": "2021-09-23",
+      "titre": "Communication financière semestrielle au 30-06-2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_exe_30062021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_30juin2021.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2021",
+      "type": "Communication semestrielle",
+      "taille": 3.9
+    },
+    {
+      "date": "2021-08-16",
+      "titre": "Indicateurs Trimestriels : T2-2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t22021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind2t2021.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2021",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.6
+    },
+    {
+      "date": "2021-05-20",
+      "titre": "Indicateurs Trimestriels : T1-2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t12021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_trim_1t2021.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2021",
+      "type": "Indicateurs trimestriels",
+      "taille": 1.8
+    },
+    {
+      "date": "2021-04-29",
+      "titre": "Communiqué post AGO du 27/04/2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_postago.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_poste_ago.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-ago-du-27042021",
+      "type": "Assemblée générale",
+      "taille": 1.7
+    },
+    {
+      "date": "2021-04-21",
+      "titre": "Communiqué Financier : Résultats Annuels 2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financier_2021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communique2020.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2020-0",
+      "type": "Résultats annuels",
+      "taille": 4.9
+    },
+    {
+      "date": "2021-03-23",
+      "titre": "Interdiction de la pratique du jeton par les pouvoirs publics",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_interdiction_jeton_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/interd_jeton.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/interdiction-de-la-pratique-du-jeton-par-les-pouvoirs-publics-0",
+      "type": "Autre",
+      "taille": 0.4
+    },
+    {
+      "date": "2021-03-19",
+      "titre": "Communiqué financier : résultats annuels 2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_resultats_annuels_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_rt_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2020",
+      "type": "Résultats annuels",
+      "taille": 1
+    },
+    {
+      "date": "2021-02-15",
+      "titre": "Indicateurs Trimestriels : T4-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst4_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/indicateurst4_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.5
+    },
+    {
+      "date": "2020-11-23",
+      "titre": "Indicateurs Trimestriels : T3-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t3_020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind3t2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.6
+    },
+    {
+      "date": "2020-09-24",
+      "titre": "Communication financière semestrielle au 30-06-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_24_09_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/com_fin-1s2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2020",
+      "type": "Communication semestrielle",
+      "taille": 2.5
+    },
+    {
+      "date": "2020-08-27",
+      "titre": "Indicateurs Trimestriels T2-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurs_trimestriels-_t22020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t2-2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.5
+    },
+    {
+      "date": "2020-07-02",
+      "titre": "Communiqué post AGO du 30/06/2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_30_juin_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communique_30_juin_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-ago-du-30062020",
+      "type": "Assemblée générale",
+      "taille": 1.3
+    },
+    {
+      "date": "2020-05-27",
+      "titre": "Indicateurs Trimestriels : T1-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst1_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t1_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.1
+    },
+    {
+      "date": "2020-05-27",
+      "titre": "Communiqué financier relatif au conseil d'administration du 22 Mai",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_financier_2019-postca.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-postca22mai.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-relatif-au-conseil-dadministration-du-22-mai",
+      "type": "Autre",
+      "taille": 0.2
+    },
+    {
+      "date": "2020-04-29",
+      "titre": "Communiqué financier : résultats annuels 2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2019jal_.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-2019.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2019-0",
+      "type": "Résultats annuels",
+      "taille": 3.3
+    },
+    {
+      "date": "2020-03-26",
+      "titre": "Communiqué financier : résultats annuels 2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_ca2019_colorado.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_ca.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2019",
+      "type": "Résultats annuels",
+      "taille": 0.2
+    },
+    {
+      "date": "2020-02-28",
+      "titre": "Indicateurs Trimestriels : T4-2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurs_trimestriels_t42019.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind4t19.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2019",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.5
+    },
+    {
+      "date": "2019-11-29",
+      "titre": "Indicateurs Trimestriels : T3-2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_de_presse_t32019.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communique_de_presse_t32019.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2019",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.1
+    },
+    {
+      "date": "2019-09-26",
+      "titre": "Communication financière semestrielle au 30/06/2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_30_juin2019v2.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_1s19.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062019",
+      "type": "Communication semestrielle",
+      "taille": 0.2
+    },
+    {
+      "date": "2019-08-30",
+      "titre": "Indicateurs Trimestriels : T2-2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurs_trim_2-2019.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_trim.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t2-2019",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.1
+    },
+    {
+      "date": "2019-03-25",
+      "titre": "Communication Financière au 31/12/2018",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2018.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122018",
+      "type": "Autre",
+      "taille": 1.3
+    },
+    {
+      "date": "2018-09-28",
+      "titre": "Communication financière semestrielle au 30/06/2018",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_juin2018.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf_juin18.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062018",
+      "type": "Communication semestrielle",
+      "taille": 0.2
+    },
+    {
+      "date": "2018-03-23",
+      "titre": "Communication Financière au 31/12/2017",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/pages_de_comm_financiere_2018_pub.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comf2017.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122017",
+      "type": "Autre",
+      "taille": 0.4
+    },
+    {
+      "date": "2017-09-28",
+      "titre": "Communication Financière Semestrielle au 30/06/2017",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/comfin_sem_2017.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/com_f_sem1_2017.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062017",
+      "type": "Communication semestrielle",
+      "taille": 1.1
+    },
+    {
+      "date": "2017-03-30",
+      "titre": "Communication Financière au 31/12/2016",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/comm_financiere_2016_webhd_page1.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_financiere_2016_thumbnail.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122016",
+      "type": "Autre",
+      "taille": 1.6
+    },
+    {
+      "date": "2016-06-30",
+      "titre": "Communication Financière Semestrielle au 30/06/2016",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication1s16.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm2016.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062016",
+      "type": "Communication semestrielle",
+      "taille": 0.6
+    },
+    {
+      "date": "2016-03-30",
+      "titre": "Communication Financière au 31/12/2015",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/comm_financiere_31122015.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_financiere_2015_12_31.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122015",
+      "type": "Autre",
+      "taille": 0.9
+    },
+    {
+      "date": "2015-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2015",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062015.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_2015.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062015",
+      "type": "Communication semestrielle",
+      "taille": 0.2
+    },
+    {
+      "date": "2014-12-31",
+      "titre": "Communication Financière au 31/12/2014",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2014.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2014.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122014",
+      "type": "Autre",
+      "taille": 0.6
+    },
+    {
+      "date": "2014-11-10",
+      "titre": "Communiqué relatif à l’augmentation de capital de COLORADO réservée à ses salariés",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/col_press_aug_fr.pdf",
+      "apercu": null,
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-relatif-laugmentation-de-capital-de-colorado-reservee-ses-salaries",
+      "type": "Autre",
+      "taille": 0.1
+    },
+    {
+      "date": "2014-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2014",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062014.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_2014.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062014",
+      "type": "Communication semestrielle",
+      "taille": 4.5
+    },
+    {
+      "date": "2013-12-31",
+      "titre": "Communication Financière au 31/12/2013",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2013.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2013_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122013",
+      "type": "Autre",
+      "taille": 0.6
+    },
+    {
+      "date": "2013-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2013",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062013.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_2013.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062013",
+      "type": "Communication semestrielle",
+      "taille": 0.2
+    },
+    {
+      "date": "2013-04-01",
+      "titre": "Assemblée générale ordinaire du 23 mai 2013 - Avis de convocation",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/col_conv_ago_fr.pdf",
+      "apercu": null,
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/assemblee-generale-ordinaire-du-23-mai-2013-avis-de-convocation",
+      "type": "Assemblée générale",
+      "taille": 0.1
+    },
+    {
+      "date": "2012-12-31",
+      "titre": "Communication Financière au 31/12/2012",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2012.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2012.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122012",
+      "type": "Autre",
+      "taille": 2.8
+    },
+    {
+      "date": "2012-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2012",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062012.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_au_30062012.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062012",
+      "type": "Communication semestrielle",
+      "taille": 0.7
+    },
+    {
+      "date": "2011-12-31",
+      "titre": "Communication Financière au 31/12/2011",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2011.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2011.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122011",
+      "type": "Autre",
+      "taille": 2.4
+    },
+    {
+      "date": "2011-09-28",
+      "titre": "Communication Financière semestrielle au 30/06/2011",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062011.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_au_30062011.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062011",
+      "type": "Communication semestrielle",
+      "taille": 0.8
+    },
+    {
+      "date": "2010-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2010",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062010.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_au_30062010.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062010",
+      "type": "Communication semestrielle",
+      "taille": 0.8
+    },
+    {
+      "date": "2009-06-30",
+      "titre": "Communication Financière semestrielle au 30/06/2009",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_au_30062009.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_au_30062009.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30062009",
+      "type": "Communication semestrielle",
+      "taille": 0.8
+    }
+  ],
+  "etatsFinanciers": [
+    {
+      "date": "2026-09-25",
+      "titre": "Rapport Financier Semestriel 1S2026",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_semestriel_1s2026.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_semestriel_1s2026.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2026",
+      "type": "Semestriel",
+      "annee": 2026,
+      "taille": 4.9
+    },
+    {
+      "date": "2026-04-09",
+      "titre": "Rapport Financier Annuel 2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2025.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/image_rapport_2025.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2025",
+      "type": "Annuel",
+      "annee": 2025,
+      "taille": 8.7
+    },
+    {
+      "date": "2025-09-22",
+      "titre": "Rapport Financier Semestriel 1S2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_semestriel_au_30-06-2025_vf.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rapfin062025.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2025",
+      "type": "Semestriel",
+      "annee": 2025,
+      "taille": 12
+    },
+    {
+      "date": "2025-04-28",
+      "titre": "Rapport Financier Annuel 2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rfa_2024_colorado.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/ig_rfa_2024.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2024",
+      "type": "Annuel",
+      "annee": 2024,
+      "taille": 15.9
+    },
+    {
+      "date": "2024-09-27",
+      "titre": "Rapport Financier Semestriel 1S2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_1s_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/img_rf_s1_24.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2024",
+      "type": "Semestriel",
+      "annee": 2024,
+      "taille": 19.2
+    },
+    {
+      "date": "2024-04-26",
+      "titre": "Rapport Financier Annuel 2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2023.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/ig_rfa23.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2023",
+      "type": "Annuel",
+      "annee": 2023,
+      "taille": 13.4
+    },
+    {
+      "date": "2023-09-27",
+      "titre": "Rapport Financier Semestriel 1S2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rf_s1-2023_vf.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/img_rf-1s23.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2023",
+      "type": "Semestriel",
+      "annee": 2023,
+      "taille": 1.9
+    },
+    {
+      "date": "2023-04-20",
+      "titre": "Rapport Financier Annuel 2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rfa_2022.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2022",
+      "type": "Annuel",
+      "annee": 2022,
+      "taille": 31
+    },
+    {
+      "date": "2022-09-30",
+      "titre": "Rapport Financier Semestriel 1S2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rf_s1-2022.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rf-1s22.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2022",
+      "type": "Semestriel",
+      "annee": 2022,
+      "taille": 3.4
+    },
+    {
+      "date": "2022-04-22",
+      "titre": "Rapport Financier Annuel 2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2021.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/im_rapp_fin_21.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2021",
+      "type": "Annuel",
+      "annee": 2021,
+      "taille": 8.2
+    },
+    {
+      "date": "2021-09-23",
+      "titre": "Rapport Financier Semestriel 1S2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rfs_1s21v2.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rfs_1s2021_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2021",
+      "type": "Semestriel",
+      "annee": 2021,
+      "taille": 3.4
+    },
+    {
+      "date": "2021-04-21",
+      "titre": "Rapport financier annuel 2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_financier_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rapport2020.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2020",
+      "type": "Annuel",
+      "annee": 2020,
+      "taille": 28
+    },
+    {
+      "date": "2020-09-24",
+      "titre": "Rapport Financier Semestriel 1S2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rap-fin_1s20.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rap_fin-1s2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2020",
+      "type": "Semestriel",
+      "annee": 2020,
+      "taille": 2.2
+    },
+    {
+      "date": "2020-04-29",
+      "titre": "Rapport Financier Annuel 2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/rapport_fin_2019vf.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/rf_2019.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-annuel-2019",
+      "type": "Annuel",
+      "annee": 2019,
+      "taille": 17.4
+    },
+    {
+      "date": "2019-09-26",
+      "titre": "Rapport Financier Semestriel 1S2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/cf_e_300619v2.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/ef_1s19.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapport-financier-semestriel-1s2019",
+      "type": "Semestriel",
+      "annee": 2019,
+      "taille": 1.3
+    },
+    {
+      "date": "2019-03-25",
+      "titre": "Etats financiers 2018",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/comm_financiere_2018.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2018",
+      "type": "Annuel",
+      "annee": 2018,
+      "taille": 3.9
+    },
+    {
+      "date": "2018-09-28",
+      "titre": "Etats financiers (semestriel) 2018",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etat_fin_juin2018.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/ef_juin18.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriel-2018",
+      "type": "Semestriel",
+      "annee": 2018,
+      "taille": 1
+    },
+    {
+      "date": "2018-03-23",
+      "titre": "Etats financiers 2017",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fin_2017_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatf2017.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2017",
+      "type": "Annuel",
+      "annee": 2017,
+      "taille": 1.9
+    },
+    {
+      "date": "2017-09-28",
+      "titre": "Etats financiers (semestriel) 2017",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etat_fin_sem_2017.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat_fin_2017.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriel-2017",
+      "type": "Semestriel",
+      "annee": 2017,
+      "taille": 2.6
+    },
+    {
+      "date": "2017-04-14",
+      "titre": "Etats financiers 2016",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/comm_financiere_2016_webhd_tableaux.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etats_fin-2016.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2016",
+      "type": "Annuel",
+      "annee": 2016,
+      "taille": 2.6
+    },
+    {
+      "date": "2016-10-11",
+      "titre": "Etats financiers (semestriel) 2016",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/model1_choisi_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat2016fr.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriel-2016",
+      "type": "Semestriel",
+      "annee": 2016,
+      "taille": 3.7
+    },
+    {
+      "date": "2015-12-31",
+      "titre": "Etats financiers 2015",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etat_financier_2015.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat2015.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2015",
+      "type": "Annuel",
+      "annee": 2015,
+      "taille": 4.3
+    },
+    {
+      "date": "2015-06-30",
+      "titre": "Etats financiers (semestriels) 2015",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062015.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat_2015.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2015",
+      "type": "Semestriel",
+      "annee": 2015,
+      "taille": 1.3
+    },
+    {
+      "date": "2014-12-31",
+      "titre": "Etats financiers 2014",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fin_2014_fr_1.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatfin2014.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2014",
+      "type": "Annuel",
+      "annee": 2014,
+      "taille": 1.7
+    },
+    {
+      "date": "2014-06-30",
+      "titre": "Etats financiers (semestriels) 2014",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fianciers_au_30062014.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat_06_30_2014.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2014",
+      "type": "Semestriel",
+      "annee": 2014,
+      "taille": 5.8
+    },
+    {
+      "date": "2013-12-31",
+      "titre": "Etats financiers 2013",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fin_2013_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatfin2013.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2013",
+      "type": "Annuel",
+      "annee": 2013,
+      "taille": 22.3
+    },
+    {
+      "date": "2013-06-30",
+      "titre": "Etats financiers (semestriels) 2013",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062013.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etat_2013.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2013",
+      "type": "Semestriel",
+      "annee": 2013,
+      "taille": 1.4
+    },
+    {
+      "date": "2012-12-31",
+      "titre": "Etats financiers 2012",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fin_2012_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatfin2012.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2012",
+      "type": "Annuel",
+      "annee": 2012,
+      "taille": 2.8
+    },
+    {
+      "date": "2012-06-30",
+      "titre": "Etats financiers (semestriels) 2012",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062012.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062012.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2012",
+      "type": "Semestriel",
+      "annee": 2012,
+      "taille": 0.9
+    },
+    {
+      "date": "2011-12-31",
+      "titre": "Etats financiers 2011",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_fin_2011_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatfin2011.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2011",
+      "type": "Annuel",
+      "annee": 2011,
+      "taille": 0.7
+    },
+    {
+      "date": "2011-06-30",
+      "titre": "Etats financiers (semestriels) 2011",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062011.jpg_.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062011.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2011",
+      "type": "Semestriel",
+      "annee": 2011,
+      "taille": 0.8
+    },
+    {
+      "date": "2010-12-31",
+      "titre": "Etats financiers 2010",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etat_fin_2010_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etatfin2010.png",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-2010",
+      "type": "Annuel",
+      "annee": 2010,
+      "taille": 1.3
+    },
+    {
+      "date": "2010-06-30",
+      "titre": "Etats financiers (semestriels) 2010",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062010.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062010.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2010",
+      "type": "Semestriel",
+      "annee": 2010,
+      "taille": 1.1
+    },
+    {
+      "date": "2009-06-30",
+      "titre": "Etats financiers (semestriels) 2009",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062009.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/etats_financiers_au_30062009.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/etats-financiers-semestriels-2009",
+      "type": "Semestriel",
+      "annee": 2009,
+      "taille": 9.5
     }
   ],
   "rapports": [
