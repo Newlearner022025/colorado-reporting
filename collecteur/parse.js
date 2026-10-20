@@ -27,6 +27,11 @@ export function imageOriginale(src) {
   return abs(src).replace(/\/styles\/[^/]+\/public\//, "/").replace(/\?itok=.*$/, "");
 }
 
+// Noms propres à remettre en forme après le passage en minuscules
+const NOMS = ["Forum International de la Chimie", "Dar Bouazza", "Dar Bouaâza", "Aïn Sebaâ", "Ain Sebaa", "Casablanca",
+  "Maroc", "Fès", "Kénitra", "Marrakech", "Agadir", "Oujda", "Chagar", "Ecolabel", "Covid"];
+const ACRONYMES = /\b(colorado|dgi|iso|qse|hqe|ago|pdg|rse|onssa|cndp)\b/gi;
+
 // « RÉAMÉNAGEMENT DU SITE » -> « Réaménagement du site » (les titres du site sont parfois tout en majuscules)
 export function titre(s) {
   s = s.replace(/\s+/g, " ").trim();
@@ -34,7 +39,8 @@ export function titre(s) {
   if (lettres && lettres === lettres.toUpperCase()) {
     s = s.toLowerCase();
     s = s.charAt(0).toUpperCase() + s.slice(1);
-    s = s.replace(/\b(colorado|dgi|iso|qse|hqe|ago|pdg|rse)\b/gi, w => w.toUpperCase());
+    s = s.replace(ACRONYMES, w => w.toUpperCase()).replace(/\bm\. /g, "M. ");
+    for (const nom of NOMS) s = s.replace(new RegExp(nom.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"), nom);
   }
   return s;
 }
