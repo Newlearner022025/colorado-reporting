@@ -1,0 +1,12 @@
+{
+  "name": "colorado-reporting-collecteur",
+  "private": true,
+  "type": "module",
+  "description": "Lit l'espace Corporate de colorado.ma et produit data/contenus.json",
+  "scripts": {
+    "collecte": "node collect.js"
+  },
+  "dependencies": {
+    "linkedom": "^0.18.0"
+  }
+}
