@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="images/icone-apple-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Colorado">
-<title>Maquette 5 – Communiqués financiers</title>
+<title data-t>Maquette 5 – Communiqués financiers</title>
 <style>
   :root { --ink: #1f2329; --muted: #6b7280; --line: #e5e7eb; --red: #b5121b; --bg: #ffffff; --soft: #f5f5f4; }
   * { box-sizing: border-box; }
@@ -64,27 +64,27 @@
 <body>
 <div class="phone">
   <header>
-    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
-    <div class="hello">Espace Corporate<b>Communiqués financiers</b></div>
+    <a data-t href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
+    <div class="hello" data-t>Espace Corporate<b data-t>Communiqués financiers</b></div>
   </header>
 
   <section>
-    <h1>Communiqués financiers</h1>
-    <div class="sub">Résultats, indicateurs et assemblées générales</div>
+    <h1 data-t>Communiqués financiers</h1>
+    <div class="sub" data-t>Résultats, indicateurs et assemblées générales</div>
 
     <div class="latest" id="latest"></div>
 
     <div class="chips" id="chips"></div>
     <div id="list"></div>
-    <button class="more" id="more" hidden>Voir les communiqués plus anciens</button>
+    <button class="more" id="more" hidden data-t>Voir les communiqués plus anciens</button>
   </section>
 
   <nav>
-    <a href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
-    <a href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
-    <a href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
-    <a class="on" href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
-    <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
+    <a data-t href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
+    <a data-t href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
+    <a data-t href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
+    <a data-t class="on" href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
+    <a data-t href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
   </nav>
 </div>
 <script src="donnees.js"></script>
@@ -92,7 +92,7 @@
   // Communiqués de départ, remplacés par data/contenus.json dès qu'il est chargé
   const D = "https://www.colorado.ma/corporate/sites/default/files/documents/";
   const P = "https://www.colorado.ma/corporate/sites/default/files/photos/"; // aperçus fournis par le site
-  const esc = Donnees.esc;
+  const { esc, T } = Donnees;
   let CF = [
     { d: "2026-09-25", k: "Communication semestrielle", t: "Communication financière semestrielle au 30-06-2026", f: "communication_financiere_semestrielle_au_30-06-2026.pdf", p: "communication_financiere_semestrielle_au_30-06-2026.png" },
     { d: "2026-05-18", k: "Assemblée générale", t: "Communiqué post AGO du 15/05/2026", f: "communique_post_ago_du_15-05-2026.pdf", p: "communique_post_ago_du_15-05-2026.png" },
@@ -105,7 +105,7 @@
     { d: "2025-02-18", k: "Indicateurs trimestriels", t: "Indicateurs trimestriels : T4-2024", f: "exe_communique_de_presse_t4_2024.pdf", p: "com_indt4_2024.png" },
     { d: "2024-11-15", k: "Indicateurs trimestriels", t: "Indicateurs trimestriels : T3-2024", f: "cf_ind_t3_2024.pdf", p: "ind_t3_2024.png" }
   ].map(c => ({ ...c, pdf: D + c.f, img: P + c.p }));
-  const fmt = s => new Date(s).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  const fmt = s => new Date(s).toLocaleDateString(Donnees.locale, { day: "numeric", month: "long", year: "numeric" });
   const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
   const apercu = (c, cls = "") => c.img ? `<img ${cls} src="${esc(c.img)}" alt="" loading="lazy">` : `<div class="ph">PDF</div>`;
   const PAR_LOT = 12;
@@ -114,8 +114,8 @@
   function render() {
     const l = CF[0];
     document.getElementById("latest").innerHTML = `${apercu(l)}<div>
-      <div class="k">Dernière publication · ${esc(l.k)}</div><div class="t">${esc(l.t)}</div>
-      <div class="d">Publié le ${fmt(l.d)}</div><a class="btn" href="${esc(l.pdf)}">${DL}Télécharger</a></div>`;
+      <div class="k">${T("Dernière publication")} · ${esc(T(l.k))}</div><div class="t">${esc(l.t)}</div>
+      <div class="d">${T("Publié le")} ${fmt(l.d)}</div><a class="btn" href="${esc(l.pdf)}">${DL}${T("Télécharger")}</a></div>`;
 
     let html = "", year = "";
     const liste = CF.slice(1).filter(c => type === "Tous" || c.k === type);
@@ -124,19 +124,20 @@
       const y = c.d.slice(0, 4);
       if (y !== year) { html += `<div class="year">${y}</div>`; year = y; }
       html += `<a class="doc" href="${esc(c.pdf)}">${apercu(c, 'class="ph"')}
-        <div><div class="k">${esc(c.k)}</div><div class="t">${esc(c.t)}</div><div class="d">${fmt(c.d)}${c.mo ? " · " + Donnees.taille(c.mo) : ""}</div></div><span class="dl">${DL}</span></a>`;
+        <div><div class="k">${esc(T(c.k))}</div><div class="t">${esc(c.t)}</div><div class="d">${fmt(c.d)}${c.mo ? " · " + Donnees.taille(c.mo) : ""}</div></div><span class="dl">${DL}</span></a>`;
     });
     document.getElementById("list").innerHTML = html;
     const types = ["Tous", ...new Set(CF.map(c => c.k))];
-    document.getElementById("chips").innerHTML = types.map(t => `<button class="chip ${t === type ? "on" : ""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
+    document.getElementById("chips").innerHTML = types.map(t => `<button class="chip ${t === type ? "on" : ""}" data-type="${esc(t)}">${esc(T(t))}</button>`).join("");
   }
-  document.addEventListener("click", e => { const c = e.target.closest("[data-t]"); if (c) { type = c.dataset.t; visibles = PAR_LOT; render(); } });
+  document.addEventListener("click", e => { const c = e.target.closest("[data-type]"); if (c) { type = c.dataset.type; visibles = PAR_LOT; render(); } });
   document.getElementById("more").onclick = () => { visibles += PAR_LOT; render(); };
   render();
 
   Donnees.charger().then(d => {
-    if (!d?.communiques?.length) return;
-    CF = d.communiques.filter(c => c.date).map(c => ({ d: c.date, k: c.type, t: c.titre, pdf: c.pdf, img: c.apercu, mo: c.taille }));
+    const communiques = Donnees.champ(d, "communiques");
+    if (!communiques?.length) return;
+    CF = communiques.filter(c => c.date).map(c => ({ d: c.date, k: c.type, t: c.titre, pdf: c.pdf, img: c.apercu, mo: c.taille }));
     render();
   });
 </script>

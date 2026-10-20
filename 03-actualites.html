@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="images/icone-apple-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Colorado">
-<title>Maquette 3 – Actualités</title>
+<title data-t>Maquette 3 – Actualités</title>
 <style>
   :root { --ink: #1f2329; --muted: #6b7280; --line: #e5e7eb; --red: #b5121b; --bg: #ffffff; --soft: #f5f5f4; }
   * { box-sizing: border-box; }
@@ -64,35 +64,35 @@
 <body>
 <div class="phone">
   <header>
-    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
-    <div class="hello">Espace Corporate<b>Actualités</b></div>
+    <a data-t href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
+    <div class="hello" data-t>Espace Corporate<b data-t>Actualités</b></div>
   </header>
 
   <section>
-    <h1>Actualités</h1>
-    <div class="sub">Toute l'actualité de la société</div>
+    <h1 data-t>Actualités</h1>
+    <div class="sub" data-t>Toute l'actualité de la société</div>
 
-    <label class="search" id="recherche"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Rechercher une actualité"></label>
+    <label class="search" id="recherche"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Rechercher une actualité" data-t></label>
     <div class="chips" id="chips"></div>
 
     <div id="list"></div>
-    <div class="empty" id="empty">Aucune actualité ne correspond à votre recherche.</div>
-    <button class="more" id="more" hidden>Voir plus d'actualités</button>
+    <div class="empty" id="empty" data-t>Aucune actualité ne correspond à votre recherche.</div>
+    <button class="more" id="more" hidden data-t>Voir plus d'actualités</button>
   </section>
 
   <nav>
-    <a href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
-    <a class="on" href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
-    <a href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
-    <a href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
-    <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
+    <a data-t href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
+    <a data-t class="on" href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
+    <a data-t href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
+    <a data-t href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
+    <a data-t href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
   </nav>
 </div>
 <script src="donnees.js"></script>
 <script>
   // Contenus de départ, remplacés par data/contenus.json dès qu'il est chargé
   const F = "https://www.colorado.ma/corporate/sites/default/files/";
-  const esc = Donnees.esc;
+  const { esc, T } = Donnees;
   let NEWS = [
     { d: "2026-09-25", k: "Finance", t: "Communication financière semestrielle au 30-06-2026", x: "Publication des résultats du premier semestre 2026 et du rapport financier semestriel.", img: "images/ra-financier.jpg" },
     { d: "2026-05-15", k: "Finance", t: "Communiqué post AGO du 15/05/2026", img: "images/ra-chiffres.jpg" },
@@ -107,7 +107,7 @@
     { d: "2022-12-22", k: "Certifications", t: "COLORADO certifiée ISO 27001", img: F + "photos/iso_27001_c2_modif_5_x.jpg" },
     { d: "2022-08-31", k: "Certifications", t: "Renouvellement des certifications QSE", img: F + "styles/sidebar_actualite_thumbnail/public/photos/iso_0_0.jpg?itok=WXBAu3wu" }
   ];
-  const fmt = (s, o) => new Date(s).toLocaleDateString("fr-FR", o);
+  const fmt = (s, o) => new Date(s).toLocaleDateString(Donnees.locale, o);
   const PAR_LOT = 12;
   let cat = "Toutes", visibles = PAR_LOT;
 
@@ -119,19 +119,19 @@
     items.slice(0, visibles).forEach((n, i) => {
       const lien = esc(n.lien || "#"), img = esc(n.img || "");
       if (i === 0 && !q && cat === "Toutes") {
-        html += `<a class="feature" href="${lien}"><div class="img" style="background-image:url('${img}')"><span>À la une</span></div>
-          <div class="body"><div class="k">${esc(n.k)}</div><div class="t">${esc(n.t)}</div>${n.x ? `<div class="x">${esc(n.x)}</div>` : ""}<div class="d">${fmt(n.d, { day: "numeric", month: "long", year: "numeric" })}</div></div></a>`;
+        html += `<a class="feature" href="${lien}"><div class="img" style="background-image:url('${img}')"><span>${T("À la une")}</span></div>
+          <div class="body"><div class="k">${esc(T(n.k))}</div><div class="t">${esc(n.t)}</div>${n.x ? `<div class="x">${esc(n.x)}</div>` : ""}<div class="d">${fmt(n.d, { day: "numeric", month: "long", year: "numeric" })}</div></div></a>`;
         return;
       }
       const m = fmt(n.d, { month: "long", year: "numeric" });
       if (m !== month) { html += `<div class="month">${m}</div>`; month = m; }
       html += `<a class="news" href="${lien}"><div class="img" style="background-image:url('${img}')"></div>
-        <div><div class="k">${esc(n.k)}</div><div class="t">${esc(n.t)}</div><div class="d">${fmt(n.d, { day: "numeric", month: "long", year: "numeric" })}</div></div></a>`;
+        <div><div class="k">${esc(T(n.k))}</div><div class="t">${esc(n.t)}</div><div class="d">${fmt(n.d, { day: "numeric", month: "long", year: "numeric" })}</div></div></a>`;
     });
     document.getElementById("list").innerHTML = html;
     document.getElementById("empty").style.display = items.length ? "none" : "block";
     const cats = ["Toutes", ...new Set(NEWS.map(n => n.k))];
-    document.getElementById("chips").innerHTML = cats.map(c => `<button class="chip ${c === cat ? "on" : ""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+    document.getElementById("chips").innerHTML = cats.map(c => `<button class="chip ${c === cat ? "on" : ""}" data-c="${esc(c)}">${esc(T(c))}</button>`).join("");
   }
   document.addEventListener("click", e => { const c = e.target.closest("[data-c]"); if (c) { cat = c.dataset.c; visibles = PAR_LOT; render(); } });
   document.getElementById("q").addEventListener("input", () => { visibles = PAR_LOT; render(); });
@@ -141,8 +141,9 @@
   render();
 
   Donnees.charger().then(d => {
-    if (!d?.actualites?.length) return;
-    NEWS = d.actualites.filter(a => a.date).map(a => ({ d: a.date, k: a.categorie, t: a.titre, x: a.extrait, img: a.image, lien: a.lien }));
+    const actualites = Donnees.champ(d, "actualites");
+    if (!actualites?.length) return;
+    NEWS = actualites.filter(a => a.date).map(a => ({ d: a.date, k: a.categorie, t: a.titre, x: a.extrait, img: a.image, lien: a.lien }));
     render();
   });
 </script>

@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="images/icone-apple-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Colorado">
-<title>Maquette 4 – Rapports annuels</title>
+<title data-t>Maquette 4 – Rapports annuels</title>
 <style>
   :root { --ink: #1f2329; --muted: #6b7280; --line: #e5e7eb; --red: #b5121b; --bg: #ffffff; --soft: #f5f5f4; }
   * { box-sizing: border-box; }
@@ -77,48 +77,48 @@
 <body>
 <div class="phone">
   <header>
-    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
-    <div class="hello">Espace Corporate<b>Rapports annuels</b></div>
+    <a data-t href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
+    <div class="hello" data-t>Espace Corporate<b data-t>Rapports annuels</b></div>
   </header>
 
   <section>
-    <h1>Rapports</h1>
-    <div class="sub">Rapports annuels et rapports financiers de chaque exercice</div>
+    <h1 data-t>Rapports</h1>
+    <div class="sub" data-t>Rapports annuels et rapports financiers de chaque exercice</div>
 
     <div class="tabs">
-      <button class="on" data-p="annuels">Rapports annuels</button>
-      <button data-p="financiers">Rapports financiers</button>
+      <button class="on" data-p="annuels" data-t>Rapports annuels</button>
+      <button data-p="financiers" data-t>Rapports financiers</button>
     </div>
 
     <div class="pane on" id="annuels">
       <div class="latest" id="latest"></div>
 
-      <h2>Éditions précédentes</h2>
+      <h2 data-t>Éditions précédentes</h2>
       <div class="grid" id="grid"></div>
     </div>
 
     <div class="pane" id="financiers">
       <div class="chips" id="chipsRF"></div>
-      <h2 id="titreRF">Rapports financiers</h2>
+      <h2 id="titreRF" data-t>Rapports financiers</h2>
       <div class="grid" id="gridRF"></div>
-      <button class="more" id="moreRF" hidden>Voir les rapports plus anciens</button>
-      <p class="note">Documents publiés sur l'espace Corporate de colorado.ma (rubrique États financiers).</p>
+      <button class="more" id="moreRF" hidden data-t>Voir les rapports plus anciens</button>
+      <p class="note" data-t>Documents publiés sur l'espace Corporate de colorado.ma (rubrique États financiers).</p>
     </div>
   </section>
 
   <nav>
-    <a href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
-    <a href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
-    <a class="on" href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
-    <a href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
-    <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
+    <a data-t href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
+    <a data-t href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
+    <a data-t class="on" href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
+    <a data-t href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
+    <a data-t href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
   </nav>
 </div>
 <script src="donnees.js"></script>
 <script>
   // Rapports de départ, remplacés par data/contenus.json dès qu'il est chargé
   const D = "https://www.colorado.ma/corporate/sites/default/files/documents/";
-  const esc = Donnees.esc;
+  const { esc, T } = Donnees;
   let REPORTS = [
     { y: 2025, mo: 6.6, pdf: D + "exe_final_rapport_annuel_2025_version_fr_non_vectorise_avec_correction_22052026.pdf" },
     { y: 2024, mo: 10.6, pdf: D + "rapport_annuel_2024.pdf" },
@@ -133,25 +133,27 @@
   ];
   // Couvertures en grand format extraites des PDF ; pour une nouvelle année, on prend l'aperçu du site
   const COUV_LOCALES = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025];
-  const couverture = r => COUV_LOCALES.includes(r.y) ? `images/couv-${r.y}.jpg` : (r.img || "");
+  // En anglais, les rapports sont les éditions anglaises : on montre alors leur couverture donnée par le site
+  let couvSite = false;
+  const couverture = r => (couvSite && r.img) ? r.img : COUV_LOCALES.includes(r.y) ? `images/couv-${r.y}.jpg` : (r.img || "");
   const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
 
   function render() {
     const [last, ...prev] = REPORTS;
     document.getElementById("latest").innerHTML = `
-      <img src="${esc(couverture(last))}" alt="Couverture du rapport annuel ${last.y}">
+      <img src="${esc(couverture(last))}" alt="${T("Couverture du rapport annuel")} ${last.y}">
       <div>
-        <div class="k">Dernière édition</div>
-        <div class="t">Rapport annuel ${last.y}</div>
+        <div class="k">${T("Dernière édition")}</div>
+        <div class="t">${T("Rapport annuel")} ${last.y}</div>
         <div class="s">PDF${last.mo ? " · " + Donnees.taille(last.mo) : ""}</div>
         <div class="btns">
-          <a class="btn main" href="${esc(last.pdf)}" download>${DL}Télécharger</a>
-          <a class="btn alt" href="${esc(last.pdf)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Consulter</a>
+          <a class="btn main" href="${esc(last.pdf)}" download>${DL}${T("Télécharger")}</a>
+          <a class="btn alt" href="${esc(last.pdf)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>${T("Consulter")}</a>
         </div>
       </div>`;
     document.getElementById("grid").innerHTML = prev.map(r => `
       <a class="rep" href="${esc(r.pdf)}">
-        <img src="${esc(couverture(r))}" alt="Couverture du rapport annuel ${r.y}" loading="lazy">
+        <img src="${esc(couverture(r))}" alt="${T("Couverture du rapport annuel")} ${r.y}" loading="lazy">
         <div class="y">${r.y}</div>
         <div class="s">${DL}PDF${r.mo ? " · " + Donnees.taille(r.mo) : ""}</div>
       </a>`).join("");
@@ -177,31 +179,36 @@
 
   function renderRF() {
     const liste = RF.filter(r => typeRF === "Tous" || r.type === typeRF);
-    document.getElementById("titreRF").textContent = typeRF === "Tous" ? "Rapports financiers" : `Rapports financiers ${typeRF === "Annuel" ? "annuels" : "semestriels"}`;
+    document.getElementById("titreRF").textContent = T(typeRF === "Tous" ? "Rapports financiers" : `Rapports financiers ${typeRF === "Annuel" ? "annuels" : "semestriels"}`);
     document.getElementById("gridRF").innerHTML = liste.slice(0, visiblesRF).map(r => {
-      const periode = (r.t.match(/1S\d{4}|\d{4}/) || [""])[0].replace(/^1S/, "1er sem. ");
+      // « 1er sem. 2026 » ou « 2025 » (titres français « …1S2026 » et anglais « … 1st half 2026 »)
+      const an = (r.t.match(/\d{4}/g) || [""]).pop();
+      const periode = r.type === "Semestriel" && an ? `${T("1er sem.")} ${an}` : an;
       return `<a class="rep" href="${esc(r.pdf)}">
-        ${r.img ? `<img src="${esc(r.img)}" alt="Aperçu : ${esc(r.t)}" loading="lazy">` : `<img alt="">`}
+        ${r.img ? `<img src="${esc(r.img)}" alt="${T("Aperçu :")} ${esc(r.t)}" loading="lazy">` : `<img alt="">`}
         <div class="y">${esc(periode)}</div>
-        <div class="ty">${r.type === "Annuel" ? "Annuel" : "Semestriel"}</div>
+        <div class="ty">${T(r.type === "Annuel" ? "Annuel" : "Semestriel")}</div>
         <div class="s">${DL}PDF${r.mo ? " · " + Donnees.taille(r.mo) : ""}</div>
       </a>`;
     }).join("");
     document.getElementById("moreRF").hidden = liste.length <= visiblesRF;
     document.getElementById("chipsRF").innerHTML = ["Tous", "Annuel", "Semestriel"].map(t =>
-      `<button class="chip ${t === typeRF ? "on" : ""}" data-rf="${t}">${t === "Tous" ? "Tous" : t === "Annuel" ? "Annuels" : "Semestriels"}</button>`).join("");
+      `<button class="chip ${t === typeRF ? "on" : ""}" data-rf="${t}">${T(t === "Tous" ? "Tous" : t === "Annuel" ? "Annuels" : "Semestriels")}</button>`).join("");
   }
   document.addEventListener("click", e => { const c = e.target.closest("[data-rf]"); if (c) { typeRF = c.dataset.rf; visiblesRF = PAR_LOT; renderRF(); } });
   document.getElementById("moreRF").onclick = () => { visiblesRF += PAR_LOT; renderRF(); };
   renderRF();
 
   Donnees.charger().then(d => {
-    if (d?.rapports?.length) {
-      REPORTS = d.rapports.map(r => ({ y: r.annee, mo: r.taille, pdf: r.pdf, img: r.apercu }));
+    const rapports = Donnees.champ(d, "rapports"), etats = Donnees.champ(d, "etatsFinanciers");
+    if (rapports?.length) {
+      couvSite = rapports === d.rapports_en;
+      REPORTS = rapports.map(r => ({ y: r.annee, mo: r.taille, pdf: r.pdf, img: r.apercu }));
       render();
     }
-    if (d?.etatsFinanciers?.length) {
-      RF = d.etatsFinanciers.map(r => ({ d: r.date, type: r.type, t: r.titre, pdf: r.pdf, img: r.apercu, mo: r.taille }));
+    if (etats?.length) {
+      // Type ramené à « Annuel » ou « Semestriel » (le fichier anglais dit « Annual » ou « Half-year »)
+      RF = etats.map(r => ({ d: r.date, type: /semest|half/i.test(r.type) ? "Semestriel" : "Annuel", t: r.titre, pdf: r.pdf, img: r.apercu, mo: r.taille }));
       renderRF();
     }
   });
