@@ -127,11 +127,9 @@
   <div class="stock">
     <div class="top"><span>Action COLORADO</span><span>Bourse de Casablanca</span></div>
     <div class="row">
-      <div><div class="val">77,24<small>MAD</small></div><div class="var">▲ +1,54 %</div></div>
-      <!-- courbe indicative pour la maquette -->
-      <svg viewBox="0 0 120 40"><polyline fill="none" stroke="#4ade80" stroke-width="2" points="0,30 12,28 24,32 36,24 48,26 60,20 72,22 84,15 96,18 108,10 120,8"/></svg>
+      <div><div class="val" id="cours">77,24<small>MAD</small></div><div class="var" id="variation">▲ +1,54 %</div></div>
     </div>
-    <div class="sub"><span>Capitalisation<b>—</b></span><span>Volume du jour<b>—</b></span><span>Dividende<b>—</b></span></div>
+    <div class="sub" id="majCours">Cours repris de l'espace Corporate de colorado.ma</div>
   </div>
 
   <section>
@@ -144,8 +142,8 @@
   </section>
 
   <section>
-    <h2>Colorado en chiffres <a href="#" style="color:var(--muted);font-size:12px">Exercice 2025</a></h2>
-    <div class="kpis">
+    <h2>Colorado en chiffres <span id="exercice" style="color:var(--muted);font-size:12px;font-weight:500">Exercice 2025</span></h2>
+    <div class="kpis" id="kpis">
       <div class="kpi"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><div><div class="v">624 MDH</div><div class="l">Chiffre d'affaires</div></div></div>
       <div class="kpi"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><div><div class="v">65,5 MDH</div><div class="l">Résultat net</div></div></div>
       <div class="kpi"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c1-3.5 3.5-5 7-5s6 1.5 7 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 1.5 5 4"/></svg></div><div><div class="v">216</div><div class="l">Collaborateurs</div></div></div>
@@ -167,6 +165,7 @@
 
   <section>
     <h2>Communication financière <a href="05-communiques.html">Tout voir</a></h2>
+    <div id="docs">
     <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_semestrielle_au_30-06-2026.pdf">
       <img src="https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_semestrielle_au_30-06-2026.png" alt="">
       <div><div class="t">Communication financière semestrielle au 30-06-2026</div><div class="s">25 septembre 2026 · PDF</div></div>
@@ -182,6 +181,7 @@
       <div><div class="t">Communiqué financier annuel 2025 : résultats annuels</div><div class="s">9 avril 2026 · PDF</div></div>
       <span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span>
     </a>
+    </div>
   </section>
 
   <section>
@@ -191,10 +191,12 @@
 
   <section>
     <h2>Actualités <a href="03-actualites.html">Tout voir</a></h2>
+    <div id="news">
     <a class="news" href="#"><img src="https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.20.37.png" alt=""><div><div class="k">Entreprise</div><div class="t">Renouvellement de la convention de catégorisation fiscale avec la DGI</div><div class="d">20 juillet 2024</div></div></a>
     <a class="news" href="#"><img src="https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.23.51.png" alt=""><div><div class="k">Entreprise</div><div class="t">Réaménagement du site de Dar Bouazza</div><div class="d">16 avril 2024</div></div></a>
     <a class="news" href="#"><img src="https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.12.04.png" alt=""><div><div class="k">Gouvernance</div><div class="t">Nomination de M. Chagar en tant que PDG</div><div class="d">1er mars 2024</div></div></a>
     <a class="news" href="#"><img src="https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.06.32.png" alt=""><div><div class="k">Certifications</div><div class="t">Certification HQE (Haute Qualité Environnementale)</div><div class="d">10 avril 2023</div></div></a>
+    </div>
   </section>
 
   <a class="contact" href="06-contact.html">
@@ -210,15 +212,85 @@
     <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
   </nav>
 </div>
+<script src="donnees.js"></script>
 <script>
+  const { esc, date, nombre } = Donnees;
+  const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
+
   // Défilement automatique du carrousel « À la une »
-  const slides = document.querySelectorAll(".slide"), dots = document.querySelectorAll(".dots i");
-  let i = 0;
+  let tour = 0;
   setInterval(() => {
-    slides[i].classList.remove("on"); dots[i].classList.remove("on");
-    i = (i + 1) % slides.length;
-    slides[i].classList.add("on"); dots[i].classList.add("on");
+    const slides = document.querySelectorAll(".slide"), dots = document.querySelectorAll(".dots i");
+    if (slides.length < 2) return;
+    slides[tour % slides.length].classList.remove("on"); dots[tour % slides.length]?.classList.remove("on");
+    tour++;
+    slides[tour % slides.length].classList.add("on"); dots[tour % slides.length]?.classList.add("on");
   }, 4000);
+
+  // Icônes et libellés courts des chiffres clés, reconnus d'après le libellé du site
+  const KPI = [
+    [/chiffre d.affaires/i, "Chiffre d'affaires", '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'],
+    [/résultat net|resultat net/i, "Résultat net", '<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>'],
+    [/collaborateurs/i, "Collaborateurs", '<circle cx="9" cy="8" r="3.5"/><path d="M2 20c1-3.5 3.5-5 7-5s6 1.5 7 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 1.5 5 4"/>'],
+    [/revendeurs/i, "Revendeurs agréés", '<path d="M3 9l9-5 9 5v11H3z"/><path d="M9 20v-6h6v6"/>'],
+    [/showroom|agence/i, "Showrooms et agences", '<path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'],
+    [/export/i, "Partenaires export", '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>']
+  ];
+  const valeurKpi = c => {
+    const n = Number(c.valeur.replace(",", "."));
+    const v = isNaN(n) ? c.valeur : n.toLocaleString("fr-FR");
+    return c.unite ? `${v} ${c.unite}` : v;
+  };
+
+  Donnees.charger().then(d => {
+    if (!d) return;
+
+    if (d.action) {
+      const v = d.action.variation;
+      document.getElementById("cours").innerHTML = `${nombre(d.action.cours)}<small>MAD</small>`;
+      const el = document.getElementById("variation");
+      el.textContent = `${v > 0 ? "▲ +" : v < 0 ? "▼ " : "■ "}${nombre(v)} %`;
+      el.style.color = v > 0 ? "#4ade80" : v < 0 ? "#f87171" : "#d1d5db";
+      if (d.maj) document.getElementById("majCours").textContent =
+        "Mis à jour le " + new Date(d.maj).toLocaleString("fr-FR", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+    }
+
+    if (d.chiffres?.length) {
+      const an = d.chiffres.map(c => (c.libelle.match(/\b(20\d\d)\b/) || [])[1]).find(Boolean);
+      if (an) document.getElementById("exercice").textContent = "Exercice " + an;
+      document.getElementById("kpis").innerHTML = d.chiffres.map(c => {
+        const [, court, ico] = KPI.find(([re]) => re.test(c.libelle)) || [null, c.libelle, '<circle cx="12" cy="12" r="3"/>'];
+        return `<div class="kpi"><div class="ico"><svg viewBox="0 0 24 24">${ico}</svg></div><div><div class="v">${esc(valeurKpi(c))}</div><div class="l">${esc(court)}</div></div></div>`;
+      }).join("");
+    }
+
+    // À la une : le dernier communiqué, puis les deux dernières actualités avec photo
+    const une = [];
+    const c0 = d.communiques?.[0];
+    if (c0) une.push({ img: "https://www.colorado.ma/corporate/sites/default/files/bandeau-corpo.jpg", k: "Finance", t: c0.titre, d: c0.date, lien: c0.pdf });
+    (d.actualites || []).filter(a => a.image).slice(0, 2).forEach(a => une.push({ img: a.image, k: a.categorie, t: a.titre, d: a.date, lien: a.lien }));
+    if (une.length) {
+      document.getElementById("slider").innerHTML = une.map((s, n) => `
+        <a class="slide ${n ? "" : "on"}" href="${esc(s.lien)}" style="background-image:url('${esc(s.img)}')">
+          <div class="cap"><span class="k">${esc(s.k)}</span><div class="t">${esc(s.t)}</div><div class="d">${date(s.d)}</div></div></a>`).join("")
+        + `<div class="dots">${une.map((_, n) => `<i class="${n ? "" : "on"}"></i>`).join("")}</div>`;
+      tour = 0;
+    }
+
+    if (d.communiques?.length) {
+      document.getElementById("docs").innerHTML = d.communiques.slice(0, 3).map(c => `
+        <a class="doc" href="${esc(c.pdf)}">
+          ${c.apercu ? `<img src="${esc(c.apercu)}" alt="" loading="lazy">` : `<div class="ph">PDF</div>`}
+          <div><div class="t">${esc(c.titre)}</div><div class="s">${date(c.date)} · PDF${c.taille ? " · " + Donnees.taille(c.taille) : ""}</div></div>
+          <span class="dl">${DL}</span></a>`).join("");
+    }
+
+    if (d.actualites?.length) {
+      document.getElementById("news").innerHTML = d.actualites.slice(0, 4).map(a => `
+        <a class="news" href="${esc(a.lien)}"><img src="${esc(a.image || "")}" alt="" loading="lazy">
+          <div><div class="k">${esc(a.categorie)}</div><div class="t">${esc(a.titre)}</div><div class="d">${date(a.date)}</div></div></a>`).join("");
+    }
+  });
 </script>
 </body>
 </html>

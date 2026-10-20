@@ -94,11 +94,13 @@
     <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
   </nav>
 </div>
+<script src="donnees.js"></script>
 <script>
-  // Communiqués publiés sur colorado.ma/corporate/fr/communiques-financiers
+  // Communiqués de départ, remplacés par data/contenus.json dès qu'il est chargé
   const D = "https://www.colorado.ma/corporate/sites/default/files/documents/";
   const P = "https://www.colorado.ma/corporate/sites/default/files/photos/"; // aperçus fournis par le site
-  const CF = [
+  const esc = Donnees.esc;
+  let CF = [
     { d: "2026-09-25", k: "Semestriel", t: "Communication financière semestrielle au 30-06-2026", f: "communication_financiere_semestrielle_au_30-06-2026.pdf", p: "communication_financiere_semestrielle_au_30-06-2026.png" },
     { d: "2026-05-18", k: "Assemblée générale", t: "Communiqué post AGO du 15/05/2026", f: "communique_post_ago_du_15-05-2026.pdf", p: "communique_post_ago_du_15-05-2026.png" },
     { d: "2026-04-09", k: "Résultats annuels", t: "Communiqué financier annuel 2025 : résultats annuels", f: "communique_financier_des_resultats_annuels_2025.pdf", p: "image_communique_annuel_2025_1.png" },
@@ -109,31 +111,38 @@
     { d: "2025-03-20", k: "Résultats annuels", t: "Communiqué financier : résultats annuels 2024", f: "cf_p-ca_2024.pdf", p: "img_cf_ca_180325.png" },
     { d: "2025-02-18", k: "Indicateurs trimestriels", t: "Indicateurs trimestriels : T4-2024", f: "exe_communique_de_presse_t4_2024.pdf", p: "com_indt4_2024.png" },
     { d: "2024-11-15", k: "Indicateurs trimestriels", t: "Indicateurs trimestriels : T3-2024", f: "cf_ind_t3_2024.pdf", p: "ind_t3_2024.png" }
-  ];
+  ].map(c => ({ ...c, pdf: D + c.f, img: P + c.p }));
   const fmt = s => new Date(s).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
   const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
+  const apercu = (c, cls = "") => c.img ? `<img ${cls} src="${esc(c.img)}" alt="" loading="lazy">` : `<div class="ph">PDF</div>`;
   let type = "Tous";
 
-  const l = CF[0];
-  document.getElementById("latest").innerHTML = `<img src="${P + l.p}" alt="Aperçu du communiqué"><div>
-    <div class="k">Dernière publication · ${l.k}</div><div class="t">${l.t}</div>
-    <div class="d">Publié le ${fmt(l.d)}</div><a class="btn" href="${D + l.f}">${DL}Télécharger</a></div>`;
-
   function render() {
+    const l = CF[0];
+    document.getElementById("latest").innerHTML = `${apercu(l)}<div>
+      <div class="k">Dernière publication · ${esc(l.k)}</div><div class="t">${esc(l.t)}</div>
+      <div class="d">Publié le ${fmt(l.d)}</div><a class="btn" href="${esc(l.pdf)}">${DL}Télécharger</a></div>`;
+
     let html = "", year = "";
     CF.slice(1).filter(c => type === "Tous" || c.k === type).forEach(c => {
       const y = c.d.slice(0, 4);
       if (y !== year) { html += `<div class="year">${y}</div>`; year = y; }
-      html += `<a class="doc" href="${D + c.f}"><img class="ph" src="${P + c.p}" alt="" loading="lazy">
-        <div><div class="k">${c.k}</div><div class="t">${c.t}</div><div class="d">${fmt(c.d)}</div></div><span class="dl">${DL}</span></a>`;
+      html += `<a class="doc" href="${esc(c.pdf)}">${apercu(c, 'class="ph"')}
+        <div><div class="k">${esc(c.k)}</div><div class="t">${esc(c.t)}</div><div class="d">${fmt(c.d)}${c.mo ? " · " + Donnees.taille(c.mo) : ""}</div></div><span class="dl">${DL}</span></a>`;
     });
     document.getElementById("list").innerHTML = html;
     const types = ["Tous", ...new Set(CF.map(c => c.k))];
-    document.getElementById("chips").innerHTML = types.map(t => `<button class="chip ${t === type ? "on" : ""}" data-t="${t}">${t}</button>`).join("");
+    document.getElementById("chips").innerHTML = types.map(t => `<button class="chip ${t === type ? "on" : ""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
   }
   document.addEventListener("click", e => { const c = e.target.closest("[data-t]"); if (c) { type = c.dataset.t; render(); } });
   document.getElementById("sw").onclick = e => e.currentTarget.classList.toggle("on");
   render();
+
+  Donnees.charger().then(d => {
+    if (!d?.communiques?.length) return;
+    CF = d.communiques.filter(c => c.date).map(c => ({ d: c.date, k: c.type, t: c.titre, pdf: c.pdf, img: c.apercu, mo: c.taille }));
+    render();
+  });
 </script>
 </body>
 </html>
