@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-20T11:23:09.513Z",
+  "maj": "2026-10-20T11:25:24.302Z",
   "action": {
     "cours": 73,
     "variation": -4.24
@@ -856,7 +856,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_communique_aug_capital_social.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_aug_k.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/augmentation-de-capital-social-161-176-110-dh-par-attribution-de-nouvelles-actions",
-      "type": "Autre",
+      "type": "Capital et gouvernance",
       "taille": 1.9
     },
     {
@@ -964,7 +964,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_interdiction_jeton_0.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/interd_jeton.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/interdiction-de-la-pratique-du-jeton-par-les-pouvoirs-publics-0",
-      "type": "Autre",
+      "type": "Autres communiqués",
       "taille": 0.4
     },
     {
@@ -1018,7 +1018,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_30_juin_2020.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communique_30_juin_2020.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-ago-du-30062020",
-      "type": "Assemblée générale",
+      "type": "Communication semestrielle",
       "taille": 1.3
     },
     {
@@ -1036,7 +1036,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_financier_2019-postca.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-postca22mai.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-relatif-au-conseil-dadministration-du-22-mai",
-      "type": "Autre",
+      "type": "Capital et gouvernance",
       "taille": 0.2
     },
     {
@@ -1099,7 +1099,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2018.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122018",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 1.3
     },
     {
@@ -1117,7 +1117,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/pages_de_comm_financiere_2018_pub.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comf2017.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122017",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 0.4
     },
     {
@@ -1135,7 +1135,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/comm_financiere_2016_webhd_page1.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_financiere_2016_thumbnail.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122016",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 1.6
     },
     {
@@ -1153,7 +1153,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/comm_financiere_31122015.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/comm_financiere_2015_12_31.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122015",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 0.9
     },
     {
@@ -1171,7 +1171,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2014.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2014.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122014",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 0.6
     },
     {
@@ -1180,7 +1180,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/col_press_aug_fr.pdf",
       "apercu": null,
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-relatif-laugmentation-de-capital-de-colorado-reservee-ses-salaries",
-      "type": "Autre",
+      "type": "Capital et gouvernance",
       "taille": 0.1
     },
     {
@@ -1198,7 +1198,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2013.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2013_0.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122013",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 0.6
     },
     {
@@ -1225,7 +1225,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2012.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2012.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122012",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 2.8
     },
     {
@@ -1243,7 +1243,7 @@
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/com_fin_2011.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/2011.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-au-31122011",
-      "type": "Autre",
+      "type": "Résultats annuels",
       "taille": 2.4
     },
     {
