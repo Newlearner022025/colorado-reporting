@@ -54,11 +54,12 @@ export function categorieActualite(t) {
 }
 
 export function typeCommunique(t) {
-  if (/semestriel/i.test(t)) return "Communication semestrielle";
+  if (/semestriel|30[\/-]06/i.test(t)) return "Communication semestrielle";
   if (/\bag[om]\b|assembl/i.test(t)) return "Assemblée générale";
   if (/trimestriel|\bT[1-4]\b/i.test(t)) return "Indicateurs trimestriels";
-  if (/annuel|résultats|resultats/i.test(t)) return "Résultats annuels";
-  return "Autre";
+  if (/annuel|résultats|resultats|31[\/-]12/i.test(t)) return "Résultats annuels";
+  if (/capital|conseil d.administration/i.test(t)) return "Capital et gouvernance";
+  return "Autres communiqués";
 }
 
 // /corporate/fr/actualites
