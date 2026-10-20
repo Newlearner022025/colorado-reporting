@@ -29,10 +29,17 @@
   .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
   h2 { margin: 26px 0 12px; font-size: 17px; font-weight: 600; }
 
-  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); margin-top: 16px; }
-  .tabs button { white-space: nowrap; background: none; border: none; padding: 10px 0; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-  .tabs button.on { color: var(--ink); font-weight: 600; border-bottom-color: var(--red); }
+  /* Sélecteur à deux boutons : l'onglet choisi ressort en blanc, l'autre reste grisé mais clairement cliquable */
+  .tabs { display: flex; gap: 4px; margin-top: 16px; padding: 4px; background: #ebebea; border-radius: 8px; }
+  .tabs button { flex: 1; white-space: nowrap; border: none; border-radius: 6px; padding: 10px 6px; background: transparent; font: inherit; font-size: 14px; font-weight: 500; color: var(--muted); cursor: pointer; }
+  .tabs button.on { background: #fff; color: var(--red); font-weight: 600; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
   .pane { display: none; } .pane.on { display: block; }
+  .rep .ty { font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip { border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 7px 13px; border-radius: 20px; font: inherit; font-size: 13px; cursor: pointer; }
+  .chip.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .more { display: block; width: 100%; margin: 18px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; font: inherit; font-size: 14px; color: var(--red); font-weight: 500; cursor: pointer; }
+  .more[hidden] { display: none; }
 
   /* Dernier rapport */
   .latest { display: flex; gap: 16px; margin-top: 18px; padding: 16px; background: var(--soft); border-radius: 6px; }
@@ -70,14 +77,13 @@
 <body>
 <div class="phone">
   <header>
-    <img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado">
+    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
     <div class="hello">Espace Corporate<b>Rapports annuels</b></div>
-    <a class="ic" href="#" title="Notifications"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg></a>
   </header>
 
   <section>
-    <h1>Rapports annuels</h1>
-    <div class="sub">Activité, faits marquants et résultats de chaque exercice</div>
+    <h1>Rapports</h1>
+    <div class="sub">Rapports annuels et rapports financiers de chaque exercice</div>
 
     <div class="tabs">
       <button class="on" data-p="annuels">Rapports annuels</button>
@@ -92,10 +98,10 @@
     </div>
 
     <div class="pane" id="financiers">
-      <h2>Rapports financiers annuels</h2>
-      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2025.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2025</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
-      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2023.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2023</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
-      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2021.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2021</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
+      <div class="chips" id="chipsRF"></div>
+      <h2 id="titreRF">Rapports financiers</h2>
+      <div class="grid" id="gridRF"></div>
+      <button class="more" id="moreRF" hidden>Voir les rapports plus anciens</button>
       <p class="note">Documents publiés sur l'espace Corporate de colorado.ma (rubrique États financiers).</p>
     </div>
   </section>
@@ -152,10 +158,52 @@
   }
   render();
 
+  // Rapports financiers (annuels et semestriels) : départ = page 1 du site, complété par data/contenus.json
+  const F = "https://www.colorado.ma/corporate/sites/default/files/";
+  let RF = [
+    ["2026-09-25", "Semestriel", "Rapport financier semestriel 1S2026", "rapport_financier_semestriel_1s2026.pdf", "rapport_financier_semestriel_1s2026.png"],
+    ["2026-04-09", "Annuel", "Rapport financier annuel 2025", "rapport_financier_annuel_2025.pdf", "image_rapport_2025.png"],
+    ["2025-09-22", "Semestriel", "Rapport financier semestriel 1S2025", "rapport_financier_semestriel_au_30-06-2025_vf.pdf", "rapfin062025.jpg"],
+    ["2025-04-28", "Annuel", "Rapport financier annuel 2024", "rfa_2024_colorado.pdf", "ig_rfa_2024.png"],
+    ["2024-09-27", "Semestriel", "Rapport financier semestriel 1S2024", "rapport_financier_1s_2024.pdf", "img_rf_s1_24.png"],
+    ["2024-04-26", "Annuel", "Rapport financier annuel 2023", "rapport_financier_annuel_2023.pdf", "ig_rfa23.png"],
+    ["2023-09-27", "Semestriel", "Rapport financier semestriel 1S2023", "rf_s1-2023_vf.pdf", "img_rf-1s23.png"],
+    ["2023-04-20", "Annuel", "Rapport financier annuel 2022", "rapport_financier_2022.pdf", "rfa_2022.png"],
+    ["2022-09-30", "Semestriel", "Rapport financier semestriel 1S2022", "rf_s1-2022.pdf", "rf-1s22.png"],
+    ["2022-04-22", "Annuel", "Rapport financier annuel 2021", "rapport_financier_annuel_2021.pdf", "im_rapp_fin_21.png"]
+  ].map(([d, type, t, pdf, img]) => ({ d, type, t, pdf: F + pdf, img: F + img }));
+  const PAR_LOT = 12;
+  let typeRF = "Tous", visiblesRF = PAR_LOT;
+
+  function renderRF() {
+    const liste = RF.filter(r => typeRF === "Tous" || r.type === typeRF);
+    document.getElementById("titreRF").textContent = typeRF === "Tous" ? "Rapports financiers" : `Rapports financiers ${typeRF === "Annuel" ? "annuels" : "semestriels"}`;
+    document.getElementById("gridRF").innerHTML = liste.slice(0, visiblesRF).map(r => {
+      const periode = (r.t.match(/1S\d{4}|\d{4}/) || [""])[0].replace(/^1S/, "1er sem. ");
+      return `<a class="rep" href="${esc(r.pdf)}">
+        ${r.img ? `<img src="${esc(r.img)}" alt="Aperçu : ${esc(r.t)}" loading="lazy">` : `<img alt="">`}
+        <div class="y">${esc(periode)}</div>
+        <div class="ty">${r.type === "Annuel" ? "Annuel" : "Semestriel"}</div>
+        <div class="s">${DL}PDF${r.mo ? " · " + Donnees.taille(r.mo) : ""}</div>
+      </a>`;
+    }).join("");
+    document.getElementById("moreRF").hidden = liste.length <= visiblesRF;
+    document.getElementById("chipsRF").innerHTML = ["Tous", "Annuel", "Semestriel"].map(t =>
+      `<button class="chip ${t === typeRF ? "on" : ""}" data-rf="${t}">${t === "Tous" ? "Tous" : t === "Annuel" ? "Annuels" : "Semestriels"}</button>`).join("");
+  }
+  document.addEventListener("click", e => { const c = e.target.closest("[data-rf]"); if (c) { typeRF = c.dataset.rf; visiblesRF = PAR_LOT; renderRF(); } });
+  document.getElementById("moreRF").onclick = () => { visiblesRF += PAR_LOT; renderRF(); };
+  renderRF();
+
   Donnees.charger().then(d => {
-    if (!d?.rapports?.length) return;
-    REPORTS = d.rapports.map(r => ({ y: r.annee, mo: r.taille, pdf: r.pdf, img: r.apercu }));
-    render();
+    if (d?.rapports?.length) {
+      REPORTS = d.rapports.map(r => ({ y: r.annee, mo: r.taille, pdf: r.pdf, img: r.apercu }));
+      render();
+    }
+    if (d?.etatsFinanciers?.length) {
+      RF = d.etatsFinanciers.map(r => ({ d: r.date, type: r.type, t: r.titre, pdf: r.pdf, img: r.apercu, mo: r.taille }));
+      renderRF();
+    }
   });
 
   document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {

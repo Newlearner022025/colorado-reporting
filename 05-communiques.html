@@ -39,13 +39,6 @@
   .latest .btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.8; }
 
   /* Alerte nouvelles publications */
-  .alert { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 6px; }
-  .alert svg { width: 20px; height: 20px; stroke: var(--red); fill: none; stroke-width: 1.6; flex-shrink: 0; }
-  .alert .t { flex: 1; font-size: 13px; line-height: 1.35; }
-  .alert .t small { display: block; color: var(--muted); font-size: 11px; }
-  .switch { width: 42px; height: 24px; border-radius: 12px; background: #d1d5db; position: relative; cursor: pointer; flex-shrink: 0; border: none; transition: background .2s; }
-  .switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: left .2s; }
-  .switch.on { background: var(--red); } .switch.on::after { left: 21px; }
 
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
   .chip { flex-shrink: 0; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 7px 13px; border-radius: 20px; font: inherit; font-size: 13px; cursor: pointer; }
@@ -59,7 +52,8 @@
   .doc .d { font-size: 11px; color: var(--muted); margin-top: 3px; }
   .doc .dl { margin-left: auto; color: var(--red); flex-shrink: 0; }
   .doc .dl svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.8; }
-  .more { display: block; text-align: center; margin: 18px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 14px; color: var(--red); font-weight: 500; }
+  .more { display: block; width: 100%; text-align: center; margin: 18px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; font: inherit; font-size: 14px; color: var(--red); font-weight: 500; cursor: pointer; }
+  .more[hidden] { display: none; }
 
   nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 420px; background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 5; }
   nav a { flex: 1; text-align: center; padding: 9px 0 12px; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
@@ -70,9 +64,8 @@
 <body>
 <div class="phone">
   <header>
-    <img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado">
+    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
     <div class="hello">Espace Corporate<b>Communiqués financiers</b></div>
-    <a class="ic" href="#" title="Notifications"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg></a>
   </header>
 
   <section>
@@ -81,15 +74,9 @@
 
     <div class="latest" id="latest"></div>
 
-    <div class="alert">
-      <svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg>
-      <div class="t">Être alerté des nouvelles publications<small>Une notification à chaque nouveau communiqué</small></div>
-      <button class="switch" id="sw" aria-label="Activer les alertes"></button>
-    </div>
-
     <div class="chips" id="chips"></div>
     <div id="list"></div>
-    <a class="more" href="#">Voir les communiqués plus anciens</a>
+    <button class="more" id="more" hidden>Voir les communiqués plus anciens</button>
   </section>
 
   <nav>
@@ -107,11 +94,11 @@
   const P = "https://www.colorado.ma/corporate/sites/default/files/photos/"; // aperçus fournis par le site
   const esc = Donnees.esc;
   let CF = [
-    { d: "2026-09-25", k: "Semestriel", t: "Communication financière semestrielle au 30-06-2026", f: "communication_financiere_semestrielle_au_30-06-2026.pdf", p: "communication_financiere_semestrielle_au_30-06-2026.png" },
+    { d: "2026-09-25", k: "Communication semestrielle", t: "Communication financière semestrielle au 30-06-2026", f: "communication_financiere_semestrielle_au_30-06-2026.pdf", p: "communication_financiere_semestrielle_au_30-06-2026.png" },
     { d: "2026-05-18", k: "Assemblée générale", t: "Communiqué post AGO du 15/05/2026", f: "communique_post_ago_du_15-05-2026.pdf", p: "communique_post_ago_du_15-05-2026.png" },
     { d: "2026-04-09", k: "Résultats annuels", t: "Communiqué financier annuel 2025 : résultats annuels", f: "communique_financier_des_resultats_annuels_2025.pdf", p: "image_communique_annuel_2025_1.png" },
     { d: "2026-03-10", k: "Résultats annuels", t: "Communiqué financier : résultats annuels 2025", f: "cfa-resultats_2025.pdf", p: "cfa-2025.png" },
-    { d: "2025-09-22", k: "Semestriel", t: "Communication financière semestrielle au 30-06-2025", f: "communication_financiere_2025_vf_au_30-06-2025.pdf", p: "com30062025.jpg" },
+    { d: "2025-09-22", k: "Communication semestrielle", t: "Communication financière semestrielle au 30-06-2025", f: "communication_financiere_2025_vf_au_30-06-2025.pdf", p: "com30062025.jpg" },
     { d: "2025-05-19", k: "Assemblée générale", t: "Communiqué post AGO du 15/05/2025", f: "colorado_cp_ago_15052025_0.pdf", p: "cp_ago_15-05-2025_0.png" },
     { d: "2025-04-28", k: "Résultats annuels", t: "Communiqué financier annuel 2024 : résultats annuels", f: "cf_rfa_2024.pdf", p: "ig_cf_rf_2024.png" },
     { d: "2025-03-20", k: "Résultats annuels", t: "Communiqué financier : résultats annuels 2024", f: "cf_p-ca_2024.pdf", p: "img_cf_ca_180325.png" },
@@ -121,7 +108,8 @@
   const fmt = s => new Date(s).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
   const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
   const apercu = (c, cls = "") => c.img ? `<img ${cls} src="${esc(c.img)}" alt="" loading="lazy">` : `<div class="ph">PDF</div>`;
-  let type = "Tous";
+  const PAR_LOT = 12;
+  let type = "Tous", visibles = PAR_LOT;
 
   function render() {
     const l = CF[0];
@@ -130,7 +118,9 @@
       <div class="d">Publié le ${fmt(l.d)}</div><a class="btn" href="${esc(l.pdf)}">${DL}Télécharger</a></div>`;
 
     let html = "", year = "";
-    CF.slice(1).filter(c => type === "Tous" || c.k === type).forEach(c => {
+    const liste = CF.slice(1).filter(c => type === "Tous" || c.k === type);
+    document.getElementById("more").hidden = liste.length <= visibles;
+    liste.slice(0, visibles).forEach(c => {
       const y = c.d.slice(0, 4);
       if (y !== year) { html += `<div class="year">${y}</div>`; year = y; }
       html += `<a class="doc" href="${esc(c.pdf)}">${apercu(c, 'class="ph"')}
@@ -140,8 +130,8 @@
     const types = ["Tous", ...new Set(CF.map(c => c.k))];
     document.getElementById("chips").innerHTML = types.map(t => `<button class="chip ${t === type ? "on" : ""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
   }
-  document.addEventListener("click", e => { const c = e.target.closest("[data-t]"); if (c) { type = c.dataset.t; render(); } });
-  document.getElementById("sw").onclick = e => e.currentTarget.classList.toggle("on");
+  document.addEventListener("click", e => { const c = e.target.closest("[data-t]"); if (c) { type = c.dataset.t; visibles = PAR_LOT; render(); } });
+  document.getElementById("more").onclick = () => { visibles += PAR_LOT; render(); };
   render();
 
   Donnees.charger().then(d => {

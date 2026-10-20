@@ -28,11 +28,6 @@
   h1 { margin: 0; font-size: 22px; font-weight: 600; }
   .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
-  /* Onglets repris du site : Actualités / Communiqués de presse / Colorado dans la presse */
-  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); margin-top: 16px; }
-  .tabs button { white-space: nowrap; background: none; border: none; padding: 10px 0; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-  .tabs button.on { color: var(--ink); font-weight: 600; border-bottom-color: var(--red); }
-
   .search { display: flex; align-items: center; gap: 8px; margin-top: 14px; padding: 0 12px; height: 42px; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); }
   .search svg { width: 17px; height: 17px; stroke: var(--muted); fill: none; stroke-width: 1.8; flex-shrink: 0; }
   .search input { flex: 1; border: none; background: none; font: inherit; font-size: 14px; outline: none; color: var(--ink); }
@@ -43,7 +38,8 @@
 
   /* À la une : la plus récente */
   .feature { display: block; margin-top: 18px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); }
-  .feature .img { height: 180px; background-size: cover; background-position: center; position: relative; }
+  /* Images entières (contain) : les visuels du site sont souvent des affiches avec du texte */
+  .feature .img { height: 190px; background: var(--soft) center / contain no-repeat; position: relative; }
   .feature .img span { position: absolute; left: 12px; top: 12px; background: var(--red); color: #fff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 8px; }
   .feature .body { padding: 14px; }
   .k { font-size: 10px; color: var(--red); letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
@@ -53,10 +49,11 @@
 
   .month { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin: 22px 0 4px; font-weight: 600; }
   .news { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
-  .news .img { width: 96px; height: 72px; border-radius: 4px; flex-shrink: 0; background: var(--soft) center / cover no-repeat; }
+  .news .img { width: 96px; height: 72px; border-radius: 4px; flex-shrink: 0; background: var(--soft) center / contain no-repeat; }
   .news .t { font-size: 14px; font-weight: 500; line-height: 1.35; margin-top: 3px; }
   .empty { text-align: center; color: var(--muted); font-size: 14px; padding: 40px 0; display: none; }
-  .more { display: block; text-align: center; margin: 18px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 14px; color: var(--red); font-weight: 500; }
+  .more { display: block; width: 100%; text-align: center; margin: 18px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; font: inherit; font-size: 14px; color: var(--red); font-weight: 500; cursor: pointer; }
+  .more[hidden] { display: none; }
 
   nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 420px; background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 5; }
   nav a { flex: 1; text-align: center; padding: 9px 0 12px; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
@@ -67,27 +64,20 @@
 <body>
 <div class="phone">
   <header>
-    <img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado">
+    <a href="01-demarrage.html" title="Revenir à l'écran de démarrage"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado"></a>
     <div class="hello">Espace Corporate<b>Actualités</b></div>
-    <a class="ic" href="#" title="Notifications"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg></a>
   </header>
 
   <section>
     <h1>Actualités</h1>
     <div class="sub">Toute l'actualité de la société</div>
 
-    <div class="tabs">
-      <button class="on">Actualités</button>
-      <button>Communiqués de presse</button>
-      <button>Presse</button>
-    </div>
-
-    <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Rechercher une actualité"></label>
+    <label class="search" id="recherche"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Rechercher une actualité"></label>
     <div class="chips" id="chips"></div>
 
     <div id="list"></div>
     <div class="empty" id="empty">Aucune actualité ne correspond à votre recherche.</div>
-    <a class="more" href="#">Charger plus d'actualités</a>
+    <button class="more" id="more" hidden>Voir plus d'actualités</button>
   </section>
 
   <nav>
@@ -118,13 +108,15 @@
     { d: "2022-08-31", k: "Certifications", t: "Renouvellement des certifications QSE", img: F + "styles/sidebar_actualite_thumbnail/public/photos/iso_0_0.jpg?itok=WXBAu3wu" }
   ];
   const fmt = (s, o) => new Date(s).toLocaleDateString("fr-FR", o);
-  let cat = "Toutes";
+  const PAR_LOT = 12;
+  let cat = "Toutes", visibles = PAR_LOT;
 
   function render() {
     const q = document.getElementById("q").value.trim().toLowerCase();
     const items = NEWS.filter(n => (cat === "Toutes" || n.k === cat) && (n.t + " " + (n.x || "")).toLowerCase().includes(q));
+    document.getElementById("more").hidden = items.length <= visibles;
     let html = "", month = "";
-    items.forEach((n, i) => {
+    items.slice(0, visibles).forEach((n, i) => {
       const lien = esc(n.lien || "#"), img = esc(n.img || "");
       if (i === 0 && !q && cat === "Toutes") {
         html += `<a class="feature" href="${lien}"><div class="img" style="background-image:url('${img}')"><span>À la une</span></div>
@@ -141,11 +133,11 @@
     const cats = ["Toutes", ...new Set(NEWS.map(n => n.k))];
     document.getElementById("chips").innerHTML = cats.map(c => `<button class="chip ${c === cat ? "on" : ""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   }
-  document.addEventListener("click", e => { const c = e.target.closest("[data-c]"); if (c) { cat = c.dataset.c; render(); } });
-  document.getElementById("q").addEventListener("input", render);
-  document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
-    document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b));
-  });
+  document.addEventListener("click", e => { const c = e.target.closest("[data-c]"); if (c) { cat = c.dataset.c; visibles = PAR_LOT; render(); } });
+  document.getElementById("q").addEventListener("input", () => { visibles = PAR_LOT; render(); });
+  document.getElementById("more").onclick = () => { visibles += PAR_LOT; render(); };
+  // Arrivée depuis la loupe de l'accueil : on place le curseur dans la recherche
+  if (location.hash === "#recherche") document.getElementById("q").focus();
   render();
 
   Donnees.charger().then(d => {
