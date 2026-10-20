@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette 6 – Contact</title>
+<style>
+  :root { --ink: #1f2329; --muted: #6b7280; --line: #e5e7eb; --red: #b5121b; --bg: #ffffff; --soft: #f5f5f4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9e7e4; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); }
+  .phone { max-width: 420px; min-height: 100vh; margin: 0 auto; background: var(--bg); padding-bottom: 76px; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+
+  header { display: flex; align-items: center; gap: 12px; padding: 10px 20px; position: sticky; top: 0; background: rgba(255,255,255,.97); z-index: 5; border-bottom: 1px solid var(--line); }
+  header img { height: 40px; }
+  header .hello { flex: 1; font-size: 12px; color: var(--muted); line-height: 1.3; }
+  header .hello b { display: block; color: var(--ink); font-size: 14px; font-weight: 600; }
+
+  section { padding: 18px 20px 0; }
+  h1 { margin: 0; font-size: 22px; font-weight: 600; }
+  .sub { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+  h2 { margin: 26px 0 12px; font-size: 17px; font-weight: 600; }
+
+  /* Actions rapides */
+  .quick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+  .quick a { background: var(--soft); border-radius: 6px; padding: 14px 6px; text-align: center; font-size: 12px; font-weight: 500; }
+  .quick svg { display: block; margin: 0 auto 6px; width: 22px; height: 22px; stroke: var(--red); fill: none; stroke-width: 1.6; }
+
+  /* Formulaire */
+  .form { border: 1px solid var(--line); border-radius: 6px; padding: 16px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  label { display: block; font-size: 12px; color: var(--muted); margin: 12px 0 5px; }
+  label:first-child { margin-top: 0; }
+  label b { color: var(--red); font-weight: 500; }
+  input, select, textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 4px; font: inherit; font-size: 14px; color: var(--ink); background: #fff; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--ink); }
+  textarea { resize: vertical; min-height: 96px; }
+  .seg { display: flex; gap: 6px; }
+  .seg button { flex: 1; padding: 9px 4px; border: 1px solid var(--line); border-radius: 4px; background: #fff; font: inherit; font-size: 13px; cursor: pointer; color: var(--ink); }
+  .seg button.on { border-color: var(--ink); background: var(--ink); color: #fff; }
+  .send { width: 100%; margin-top: 16px; padding: 13px; border: none; border-radius: 4px; background: var(--red); color: #fff; font: inherit; font-size: 15px; font-weight: 500; cursor: pointer; }
+  .legal { font-size: 11px; color: var(--muted); line-height: 1.5; margin-top: 12px; }
+  .ok { display: none; text-align: center; padding: 28px 10px; }
+  .ok svg { width: 44px; height: 44px; stroke: #1a7f37; fill: none; stroke-width: 1.8; }
+  .ok .t { font-size: 16px; font-weight: 600; margin-top: 10px; }
+  .ok .s { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+  .sent .fields { display: none; } .sent .ok { display: block; }
+
+  /* Adresses */
+  .addr { border: 1px solid var(--line); border-radius: 6px; padding: 14px; margin-bottom: 10px; }
+  .addr .k { font-size: 10px; color: var(--red); letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+  .addr .t { font-size: 15px; font-weight: 600; margin-top: 3px; }
+  .addr .a { font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 4px; }
+  .addr .acts { display: flex; gap: 8px; margin-top: 10px; }
+  .addr .acts a { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; }
+  .addr .acts svg { width: 14px; height: 14px; stroke: var(--red); fill: none; stroke-width: 1.8; }
+
+  details { border-top: 1px solid var(--line); }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { list-style: none; cursor: pointer; padding: 14px 0; display: flex; justify-content: space-between; align-items: center; font-size: 14px; font-weight: 500; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--red); font-size: 20px; font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  .sr { padding: 0 0 12px; }
+  .sr div { font-size: 13px; line-height: 1.5; padding: 8px 0; border-top: 1px dashed var(--line); }
+  .sr b { font-weight: 600; display: block; }
+  .sr span { color: var(--muted); }
+  .sr a { color: var(--red); font-weight: 500; }
+
+  .toast { position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: 13px; padding: 10px 14px; border-radius: 4px; opacity: 0; transition: opacity .3s; pointer-events: none; max-width: 340px; text-align: center; }
+  .toast.show { opacity: 1; }
+
+  nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 420px; background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 5; }
+  nav a { flex: 1; text-align: center; padding: 9px 0 12px; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
+  nav svg { display: block; margin: 0 auto 3px; width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+  nav a.on { color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <header>
+    <img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado">
+    <div class="hello">Espace Corporate<b>Contact</b></div>
+  </header>
+
+  <section>
+    <h1>Nous contacter</h1>
+    <div class="sub">Votre message sera orienté vers le service correspondant à votre demande et traité par l'un de nos collaborateurs.</div>
+
+    <div class="quick">
+      <a href="tel:+212522352335"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Appeler</a>
+      <a href="#form" id="toForm"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Écrire</a>
+      <a href="https://www.colorado.ma/corporate/fr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Site web</a>
+    </div>
+
+    <h2 id="form">Envoyer un message</h2>
+    <div class="form" id="formBox">
+      <div class="fields">
+        <label>Civilité <b>*</b></label>
+        <div class="seg" id="civ"><button type="button">M.</button><button type="button">Mme</button><button type="button">Mlle</button></div>
+        <div class="row">
+          <div><label>Nom <b>*</b></label><input id="nom"></div>
+          <div><label>Prénom <b>*</b></label><input id="prenom"></div>
+        </div>
+        <label>Société <b>*</b></label><input id="societe">
+        <label>E-mail <b>*</b></label><input id="email" type="email" inputmode="email">
+        <label>Téléphone <b>*</b></label><input id="tel" type="tel" inputmode="tel">
+        <label>Objet <b>*</b></label>
+        <select id="objet"><option value="">Sélectionner</option><option>Demande d'information</option><option>Demande de devis</option><option>Autres</option></select>
+        <label>Votre message <b>*</b></label><textarea id="msg"></textarea>
+        <button class="send" id="send">Envoyer</button>
+        <p class="legal">Conformément à la loi 09-08, vous disposez d'un droit d'accès, de rectification et d'opposition au traitement de vos données personnelles. Ce traitement a fait l'objet d'une déclaration auprès de la CNDP sous le N° D-W-247/2014.</p>
+      </div>
+      <div class="ok">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        <div class="t">Message envoyé</div>
+        <div class="s">Merci pour l'intérêt que vous portez à Colorado. Votre demande a été transmise au service concerné.</div>
+      </div>
+    </div>
+
+    <h2>Nos adresses</h2>
+    <div class="addr">
+      <div class="k">Siège</div>
+      <div class="t">COLORADO PEINTURES</div>
+      <div class="a">Route Moulay Thami, km 15, commune rurale Oulad Azouz, Dar Bouaâza (province de Nouaceur)<br>Autre ligne : +212 522 29 01 73</div>
+      <div class="acts">
+        <a href="tel:+212522290237"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>+212 522 29 02 37</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Colorado+Peintures+Dar+Bouazza"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Itinéraire</a>
+      </div>
+    </div>
+    <div class="addr">
+      <div class="k">Administration</div>
+      <div class="t">COLORADO PEINTURES</div>
+      <div class="a">5, Allée des Orchidées, Aïn Sebaâ, Casablanca<br>Fax : +212 522 35 41 54</div>
+      <div class="acts">
+        <a href="tel:+212522352335"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>+212 522 35 23 35</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=5+All%C3%A9e+des+Orchid%C3%A9es+Ain+Sebaa+Casablanca"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Itinéraire</a>
+      </div>
+    </div>
+
+    <h2>Agences et showrooms</h2>
+    <div id="sites"></div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+
+  <nav>
+    <a href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
+    <a href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
+    <a href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
+    <a href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
+    <a class="on" href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
+  </nav>
+</div>
+<script>
+  // Adresses reprises du rapport annuel 2025, rubrique « Nos adresses » (pages 58-59)
+  const SITES = {
+    // [nom, adresse, téléphone, fax, autres lignes]
+    "Agences et showrooms au Maroc": [
+      ["Showroom Casablanca · Aïn Sebaâ", "5, Allée des Orchidées, Aïn Sebaâ, Casablanca", "+212522352335"],
+      ["Showroom Casablanca · Zerktouni", "Résidence Zerktouni (à côté du Twin Center), 185, bd Zerktouni, Casablanca", "+212522238094"],
+      ["Showroom Casablanca · CIL", "15, Rés. El Mehdi, angle bd Sidi Abderrahmane et bd Yacoub El Mansour, Casablanca", "+212522364494"],
+      ["Showroom Kénitra", "12, av. Yacoub El Mansour, Kénitra", "+212537362693"],
+      ["Showroom Marrakech", "523, Résidence A, bd Abdelkrim El Khattabi, Marrakech", "+212524449317"],
+      ["Agence Oujda", "Technopole, parcelle n° 14, commune Ahl Angad, Oujda", "+212536690815"],
+      ["Agence et showroom Fès", "N° 39, lotissement Parc Champs de Course, Fès", "+212535942744"],
+      ["Agence Agadir", "Lot 76, Zone industrielle Tassila, Agadir", "+212528332509"],
+      ["Agence Marrakech", "Km 9, route de Ouarzazate, Marrakech", "+212524328716"]
+    ],
+    "Usines et plateformes logistiques": [
+      ["Usine Casablanca", "5, Allée des Orchidées, Aïn Sebaâ, Casablanca", "+212522352335", "+212522354154"],
+      ["Usine Dar Bouaâza", "Route Moulay Thami, km 15, commune rurale Oulad Azzouz, Dar Bouazza, Casablanca", "+212522290237", null, "29 01 73"],
+      ["Plateforme logistique Casablanca", "Route Moulay Thami, km 15, commune rurale Oulad Azzouz, Dar Bouazza, Casablanca", "+212522290237", null, "29 01 73"],
+      ["Plateforme logistique Al Gharb", "Zone libre, lot n° SR3 (zone franche), Amer Seflia", "+212537749015", null, "82"]
+    ]
+  };
+  // Showrooms à l'international (photos du rapport, sans adresse)
+  const INTL = ["Abidjan · Côte d'Ivoire", "Dakar · Sénégal", "Douala · Cameroun", "N'Djamena · Tchad", "Nouakchott · Mauritanie", "Oran · Algérie",
+    "Pointe-Noire · Congo", "Kado Abuja · Nigeria", "Abuja · Nigeria", "Warrant · Nigeria", "Victoria Island · Nigeria"];
+  const pretty = t => t.replace(/^\+212(\d)(\d{2})(\d{2})(\d{2})(\d{2})$/, "+212 $1$2 $3 $4 $5");
+  document.getElementById("sites").innerHTML = Object.entries(SITES).map(([g, list], i) => `
+    <details ${i === 0 ? "open" : ""}><summary>${g} (${list.length})</summary><div class="sr">
+      ${list.map(([n, a, t, fax, more]) => `<div><b>${n}</b><span>${a}</span><br>
+        <a href="tel:${t}">${pretty(t)}</a>${more ? ` <span>/ ${more}</span>` : ""}${fax ? `<br><span>Fax : ${pretty(fax)}</span>` : ""}</div>`).join("")}
+    </div></details>`).join("") + `
+    <details><summary>Showrooms à l'international (${INTL.length})</summary><div class="sr">
+      ${INTL.map(c => `<div><b>${c.split(" · ")[0]}</b><span>${c.split(" · ")[1]}</span></div>`).join("")}
+    </div></details>`;
+
+  // Formulaire (maquette : rien n'est réellement envoyé)
+  const civ = document.getElementById("civ");
+  civ.onclick = e => { const b = e.target.closest("button"); if (b) civ.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); };
+  const toast = m => { const t = document.getElementById("toast"); t.textContent = m; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2500); };
+  document.getElementById("send").onclick = () => {
+    const req = ["nom", "prenom", "societe", "email", "tel", "objet", "msg"];
+    const missing = req.filter(id => !document.getElementById(id).value.trim());
+    if (!civ.querySelector(".on")) missing.push("civ");
+    req.forEach(id => document.getElementById(id).style.borderColor = missing.includes(id) ? "var(--red)" : "");
+    if (missing.length) return toast("Merci de remplir les champs obligatoires.");
+    if (!/^\S+@\S+\.\S+$/.test(document.getElementById("email").value)) { document.getElementById("email").style.borderColor = "var(--red)"; return toast("L'adresse e-mail ne semble pas valide."); }
+    document.getElementById("formBox").classList.add("sent");
+  };
+</script>
+</body>
+</html>

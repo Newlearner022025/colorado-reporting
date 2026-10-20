@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette 4 – Rapports annuels</title>
+<style>
+  :root { --ink: #1f2329; --muted: #6b7280; --line: #e5e7eb; --red: #b5121b; --bg: #ffffff; --soft: #f5f5f4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9e7e4; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); }
+  .phone { max-width: 420px; min-height: 100vh; margin: 0 auto; background: var(--bg); padding-bottom: 76px; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+
+  header { display: flex; align-items: center; gap: 12px; padding: 10px 20px; position: sticky; top: 0; background: rgba(255,255,255,.97); z-index: 5; border-bottom: 1px solid var(--line); }
+  header img { height: 40px; }
+  header .hello { flex: 1; font-size: 12px; color: var(--muted); line-height: 1.3; }
+  header .hello b { display: block; color: var(--ink); font-size: 14px; font-weight: 600; }
+  .ic { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; }
+  .ic svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+
+  section { padding: 18px 20px 0; }
+  h1 { margin: 0; font-size: 22px; font-weight: 600; }
+  .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  h2 { margin: 26px 0 12px; font-size: 17px; font-weight: 600; }
+
+  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); margin-top: 16px; }
+  .tabs button { white-space: nowrap; background: none; border: none; padding: 10px 0; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tabs button.on { color: var(--ink); font-weight: 600; border-bottom-color: var(--red); }
+  .pane { display: none; } .pane.on { display: block; }
+
+  /* Dernier rapport */
+  .latest { display: flex; gap: 16px; margin-top: 18px; padding: 16px; background: var(--soft); border-radius: 6px; }
+  .latest img { width: 116px; height: auto; aspect-ratio: 707 / 1000; object-fit: cover; box-shadow: 0 6px 18px rgba(0,0,0,.18); flex-shrink: 0; background: #fff; }
+  .latest .k { font-size: 10px; color: var(--red); letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+  .latest .t { font-size: 18px; font-weight: 600; line-height: 1.3; margin-top: 4px; }
+  .latest .s { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+  .btns { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: 500; }
+  .btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+  .btn.main { background: var(--red); color: #fff; }
+  .btn.alt { border: 1px solid var(--ink); }
+
+  /* Archives */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 12px; }
+  .rep img { width: 100%; aspect-ratio: 707 / 1000; object-fit: cover; display: block; border: 1px solid var(--line); background: var(--soft); }
+  .rep .y { font-size: 14px; font-weight: 600; margin-top: 8px; }
+  .rep .s { font-size: 11px; color: var(--muted); margin-top: 2px; display: flex; align-items: center; gap: 4px; }
+  .rep .s svg { width: 12px; height: 12px; stroke: var(--red); fill: none; stroke-width: 2; }
+
+  .doc { display: flex; gap: 14px; align-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 10px; }
+  .doc .ph { width: 46px; height: 62px; background: var(--soft); border: 1px solid var(--line); display: grid; place-items: center; font-size: 10px; color: var(--red); font-weight: 600; flex-shrink: 0; }
+  .doc .t { font-size: 14px; font-weight: 500; line-height: 1.35; }
+  .doc .s { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .doc .dl { margin-left: auto; color: var(--red); flex-shrink: 0; }
+  .doc .dl svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+  .note { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 18px; }
+
+  nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 420px; background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 5; }
+  nav a { flex: 1; text-align: center; padding: 9px 0 12px; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
+  nav svg { display: block; margin: 0 auto 3px; width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+  nav a.on { color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <header>
+    <img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado">
+    <div class="hello">Espace Corporate<b>Rapports annuels</b></div>
+    <a class="ic" href="#" title="Notifications"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></svg></a>
+  </header>
+
+  <section>
+    <h1>Rapports annuels</h1>
+    <div class="sub">Activité, faits marquants et résultats de chaque exercice</div>
+
+    <div class="tabs">
+      <button class="on" data-p="annuels">Rapports annuels</button>
+      <button data-p="financiers">Rapports financiers</button>
+    </div>
+
+    <div class="pane on" id="annuels">
+      <div class="latest">
+        <img src="images/couv-2025.jpg" alt="Couverture du rapport annuel 2025">
+        <div>
+          <div class="k">Dernière édition</div>
+          <div class="t">Rapport annuel 2025</div>
+          <div class="s">PDF · 6,9 Mo · 60 pages</div>
+          <div class="btns">
+            <a class="btn main" href="https://www.colorado.ma/corporate/sites/default/files/documents/exe_final_rapport_annuel_2025_version_fr_non_vectorise_avec_correction_22052026.pdf"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Télécharger</a>
+            <a class="btn alt" href="#"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Consulter</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>Éditions précédentes</h2>
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <div class="pane" id="financiers">
+      <h2>Rapports financiers annuels</h2>
+      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2025.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2025</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
+      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2023.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2023</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
+      <a class="doc" href="https://www.colorado.ma/corporate/sites/default/files/rapport_financier_annuel_2021.pdf"><div class="ph">PDF</div><div><div class="t">Rapport financier annuel 2021</div><div class="s">États financiers · PDF</div></div><span class="dl"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
+      <p class="note">Documents publiés sur l'espace Corporate de colorado.ma (rubrique États financiers).</p>
+    </div>
+  </section>
+
+  <nav>
+    <a href="02-accueil.html"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/></svg>Accueil</a>
+    <a href="03-actualites.html"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Actualités</a>
+    <a class="on" href="04-rapports.html"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg>Rapports</a>
+    <a href="05-communiques.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Communiqués</a>
+    <a href="06-contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>Contact</a>
+  </nav>
+</div>
+<script>
+  // Rapports annuels publiés sur colorado.ma/corporate/fr/rapports (tailles relevées au téléchargement)
+  const D = "https://www.colorado.ma/corporate/sites/default/files/documents/";
+  const REPORTS = [
+    { y: 2024, mo: "11,1", f: "rapport_annuel_2024.pdf" },
+    { y: 2023, mo: "17,8", f: "rap_ann_fr.pdf", img: "https://www.colorado.ma/corporate/sites/default/files/photos/rapp_ann_fr.jpg" },
+    { y: 2022, mo: "13,1", f: "rapport_annuel.pdf" },
+    { y: 2021, mo: "8,8", f: "rapportannuel_2021_version_fr.pdf" },
+    { y: 2020, mo: "8,2", f: "rapportannuel_2020_version_fr_lt.pdf" },
+    { y: 2019, mo: "7,4", f: "rapportannuel_2019_fr.pdf" },
+    { y: 2018, mo: "4,3", f: "rapportannuel_2018_word.pdf" },
+    { y: 2017, mo: "7,1", f: "rapportannuel_2017.pdf" },
+    { y: 2016, mo: "6,5", f: "rapportannuel_2016_fr_web.pdf" }
+  ];
+  document.getElementById("grid").innerHTML = REPORTS.map(r => `
+    <a class="rep" href="${D + r.f}">
+      <img src="${r.img || `images/couv-${r.y}.jpg`}" alt="Couverture du rapport annuel ${r.y}" loading="lazy">
+      <div class="y">${r.y}</div>
+      <div class="s"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>PDF · ${r.mo} Mo</div>
+    </a>`).join("");
+
+  document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
+    document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b));
+    document.querySelectorAll(".pane").forEach(p => p.classList.toggle("on", p.id === b.dataset.p));
+  });
+</script>
+</body>
+</html>

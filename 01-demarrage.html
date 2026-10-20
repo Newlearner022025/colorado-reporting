@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette 1 – Démarrage</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9e7e4; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: #1f2329; }
+  .phone { max-width: 420px; height: 100vh; min-height: 640px; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
+
+  /* Mosaïque recomposée à partir des 4 photos d'origine de la couverture du rapport annuel 2024 */
+  .photo { position: relative; flex: 1 1 64%; background: #fff; }
+  .mosaic div { position: absolute; background-size: cover; background-repeat: no-repeat; animation: fade 1.2s ease-out both; }
+  .m-fauteuil { left: 0; top: 0; width: calc(50% - 3px); height: 62%; clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    background-image: url("images/mosaique-fauteuil.jpg"); background-position: 43% center; }
+  .m-carrosserie { left: 0; top: calc(54% + 6px); width: calc(50% - 3px); height: calc(46% - 6px); clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+    background-image: url("images/mosaique-carrosserie.jpg"); background-position: 10% center; animation-delay: .15s; }
+  .m-canape { left: calc(50% + 3px); top: 0; width: calc(50% - 3px); height: 48%; clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+    background-image: url("images/mosaique-canape.jpg"); background-position: 20% center; animation-delay: .3s; }
+  .m-vannes { left: calc(50% + 3px); top: calc(38% + 6px); width: calc(50% - 3px); height: calc(62% - 6px); clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+    background-image: url("images/mosaique-vannes.jpg"); background-position: 52% center; animation-delay: .45s; }
+
+  .badge { position: relative; z-index: 2; width: 104px; height: 104px; margin: -52px auto 0; background: #fff; border-radius: 50%; display: grid; place-items: center; box-shadow: 0 6px 24px rgba(0,0,0,.15); animation: up 1s .5s ease-out both; }
+  .badge img { width: 74px; }
+
+  .bottom { flex: 0 0 auto; padding: 10px 28px 30px; text-align: center; animation: up 1s .7s ease-out both; }
+  .title { margin: 4px 0 14px; }
+  .title .kicker { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #6b7280; }
+  .title h1 { margin: 6px 0 0; font-size: 21px; font-weight: 600; line-height: 1.3; color: #1f2329; }
+  .bottom p { margin: 0 0 18px; font-size: 13px; color: #4b5563; line-height: 1.5; }
+  .langs { display: flex; gap: 10px; }
+  .langs button { flex: 1; padding: 13px; font: inherit; font-size: 15px; font-weight: 500; cursor: pointer; border-radius: 4px; border: 1px solid #1f2329; background: #fff; color: #1f2329; }
+  .langs button.main { background: #b5121b; border-color: #b5121b; color: #fff; }
+  .legal { margin-top: 18px; font-size: 11px; color: #9ca3af; letter-spacing: .3px; }
+
+  .bar { width: 120px; height: 2px; background: #eee; margin: 18px auto 0; overflow: hidden; display: none; }
+  .bar i { display: block; height: 100%; width: 40%; background: #b5121b; animation: slide 1s ease-in-out infinite; }
+  .loading .langs { display: none; } .loading .bar { display: block; }
+
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+</style>
+</head>
+<body>
+<div class="phone" id="phone">
+  <div class="photo">
+    <div class="mosaic">
+      <div class="m-fauteuil"></div><div class="m-carrosserie"></div><div class="m-canape"></div><div class="m-vannes"></div>
+    </div>
+  </div>
+
+  <div class="badge"><img src="https://www.colorado.ma/corporate/sites/default/files/logo_soyezinspires_02.png" alt="Colorado – Soyez inspirés"></div>
+
+  <div class="bottom">
+    <div class="title">
+      <div class="kicker">Espace Corporate</div>
+      <h1>Application mobile Reporting</h1>
+    </div>
+    <p>Retrouvez toute l'actualité institutionnelle de COLORADO : communication financière, rapports annuels et actualités de la société, au même endroit.</p>
+    <div class="langs">
+      <button class="main" data-lang="fr">Français</button>
+      <button data-lang="en">English</button>
+    </div>
+    <div class="bar"><i></i></div>
+    <div class="legal">Société cotée à la Bourse de Casablanca</div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => {
+    document.getElementById("phone").classList.add("loading");
+    setTimeout(() => location.href = "02-accueil.html", 1000);
+  });
+</script>
+</body>
+</html>
