@@ -1,0 +1,17 @@
+{
+  "name": "Colorado Reporting",
+  "short_name": "Colorado",
+  "description": "Toute l'actualité institutionnelle de COLORADO : communication financière, rapports annuels et actualités de la société.",
+  "lang": "fr",
+  "start_url": "01-demarrage.html?source=appli",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "images/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "images/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "images/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

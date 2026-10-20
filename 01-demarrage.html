@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="images/icone-192.png">
+<link rel="apple-touch-icon" href="images/icone-apple-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Colorado">
 <title>Maquette 1 – Démarrage</title>
 <style>
   * { box-sizing: border-box; }
@@ -67,8 +73,17 @@
     <div class="legal">Société cotée à la Bourse de Casablanca</div>
   </div>
 </div>
+<script src="donnees.js"></script>
 <script>
+  const CLE_LANGUE = "colorado-reporting:langue";
+  let langue = null; try { langue = localStorage.getItem(CLE_LANGUE); } catch {}
+  // Appli installée et langue déjà choisie : on passe directement à l'accueil, après un court affichage du logo
+  if (langue && new URLSearchParams(location.search).get("source") === "appli") {
+    document.getElementById("phone").classList.add("loading");
+    setTimeout(() => location.replace("02-accueil.html"), 700);
+  }
   document.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => {
+    try { localStorage.setItem(CLE_LANGUE, b.dataset.lang); } catch {}
     document.getElementById("phone").classList.add("loading");
     setTimeout(() => location.href = "02-accueil.html", 1000);
   });
