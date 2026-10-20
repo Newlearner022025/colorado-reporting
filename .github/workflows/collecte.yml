@@ -1,0 +1,54 @@
+name: Collecte des contenus colorado.ma
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # toutes les 3 heures
+  workflow_dispatch: {}       # bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installer le collecteur
+        working-directory: collecteur
+        run: npm install --no-audit --no-fund
+
+      - name: Lire l'espace Corporate
+        working-directory: collecteur
+        run: npm run collecte
+
+      - name: Enregistrer les nouveaux contenus
+        id: enregistrer
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "collecteur-colorado"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/contenus.json
+            git commit -m "Contenus mis à jour depuis colorado.ma"
+            git push
+            echo "change=oui" >> "$GITHUB_OUTPUT"
+          else
+            echo "Rien de nouveau."
+          fi
+
+      # Un commit fait par cette tâche ne relance pas toujours la publication : on la demande explicitement
+      - name: Republier le site (GitHub Pages)
+        if: steps.enregistrer.outputs.change == 'oui'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Publication déjà en cours."
