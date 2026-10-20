@@ -25,7 +25,17 @@
 
   // Mode hors connexion (service worker) : actif seulement sur un site en https ou en local
   // (enregistré tout de suite : attendre la fin du chargement des photos de colorado.ma peut prendre longtemps)
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+  if ("serviceWorker" in navigator) {
+    const avaitVersion = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+    // Une nouvelle version vient de s'installer : on recharge une fois pour l'afficher tout de suite
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (avaitVersion && !sessionStorage.getItem("colorado-reporting:recharge")) {
+        sessionStorage.setItem("colorado-reporting:recharge", "1");
+        location.reload();
+      }
+    });
+  }
 
   // Installation sur l'écran d'accueil. Android/Chrome : on garde la proposition du navigateur pour un bouton.
   // iPhone : pas de proposition automatique, on affiche la marche à suivre (Partager > Sur l'écran d'accueil).
