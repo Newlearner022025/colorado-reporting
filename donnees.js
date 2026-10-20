@@ -24,9 +24,8 @@
   window.Donnees = { charger, esc, date, nombre, taille };
 
   // Mode hors connexion (service worker) : actif seulement sur un site en https ou en local
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-  }
+  // (enregistré tout de suite : attendre la fin du chargement des photos de colorado.ma peut prendre longtemps)
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 
   // Installation sur l'écran d'accueil. Android/Chrome : on garde la proposition du navigateur pour un bouton.
   // iPhone : pas de proposition automatique, on affiche la marche à suivre (Partager > Sur l'écran d'accueil).
