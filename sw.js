@@ -3,7 +3,7 @@
 // - Les contenus (data/contenus.json) sont toujours pris en ligne quand c'est possible, sinon la dernière version gardée.
 // - Les photos de colorado.ma sont gardées au fur et à mesure qu'elles s'affichent.
 // Changer VERSION à chaque mise à jour des pages pour que les téléphones prennent la nouvelle version.
-const VERSION = "v5";
+const VERSION = "v6";
 const APPLI = `appli-${VERSION}`;
 const PHOTOS = "photos-colorado";
 

@@ -43,14 +43,14 @@
     "Résultats annuels": "Annual results", "Capital et gouvernance": "Capital and governance", "Autres communiqués": "Other releases",
     "Annuel": "Annual", "Semestriel": "Half-year",
     // 01 – Démarrage
-    "Maquette 1 – Démarrage": "Colorado Reporting",
+    "Colorado Reporting": "Colorado Reporting",
     "Colorado – Soyez inspirés": "Colorado – Be inspired",
     "Application mobile Reporting": "Reporting mobile app",
     "Retrouvez toute l'actualité institutionnelle de COLORADO : communication financière, rapports annuels et actualités de la société, au même endroit.":
       "All of COLORADO's corporate news in one place: financial communication, annual reports and company news.",
     "Société cotée à la Bourse de Casablanca": "Listed on the Casablanca Stock Exchange",
     // 02 – Accueil
-    "Maquette 2 – Accueil": "Colorado Reporting – Home",
+    "Colorado Reporting – Accueil": "Colorado Reporting – Home",
     "Bonjour": "Welcome",
     "Rechercher une actualité": "Search news",
     "Installer l'appli Colorado": "Install the Colorado app",
@@ -73,11 +73,11 @@
     "Votre demande sera traitée par l'un de nos collaborateurs": "Your request will be handled by one of our team members",
     "Nous contacter": "Contact us",
     // 03 – Actualités
-    "Maquette 3 – Actualités": "Colorado Reporting – News",
+    "Colorado Reporting – Actualités": "Colorado Reporting – News",
     "Aucune actualité ne correspond à votre recherche.": "No news matches your search.",
     "Voir plus d'actualités": "Show more news", "À la une": "Featured",
     // 04 – Rapports
-    "Maquette 4 – Rapports annuels": "Colorado Reporting – Reports",
+    "Colorado Reporting – Rapports": "Colorado Reporting – Reports",
     "Rapports annuels et rapports financiers de chaque exercice": "Annual reports and financial reports for each financial year",
     "Rapports financiers": "Financial reports", "Éditions précédentes": "Previous editions",
     "Voir les rapports plus anciens": "Show older reports",
@@ -87,12 +87,12 @@
     "Rapports financiers annuels": "Annual financial reports", "Rapports financiers semestriels": "Half-year financial reports",
     "1er sem.": "H1", "Annuels": "Annual", "Semestriels": "Half-year", "Aperçu :": "Preview:",
     // 05 – Communiqués
-    "Maquette 5 – Communiqués financiers": "Colorado Reporting – Financial releases",
+    "Colorado Reporting – Communiqués financiers": "Colorado Reporting – Financial releases",
     "Résultats, indicateurs et assemblées générales": "Results, indicators and general meetings",
     "Voir les communiqués plus anciens": "Show older releases",
     "Dernière publication": "Latest publication", "Publié le": "Published on",
     // 06 – Contact
-    "Maquette 6 – Contact": "Colorado Reporting – Contact",
+    "Colorado Reporting – Contact": "Colorado Reporting – Contact",
     "Votre message sera orienté vers le service correspondant à votre demande et traité par l'un de nos collaborateurs.":
       "Your message will be routed to the relevant department and handled by one of our team members.",
     "Appeler": "Call", "Écrire": "Write", "Site web": "Website", "Envoyer un message": "Send a message",
