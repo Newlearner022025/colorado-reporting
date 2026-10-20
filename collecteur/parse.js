@@ -30,7 +30,7 @@ export function imageOriginale(src) {
 // Noms propres à remettre en forme après le passage en minuscules
 const NOMS = ["Forum International de la Chimie", "Dar Bouazza", "Dar Bouaâza", "Aïn Sebaâ", "Ain Sebaa", "Casablanca",
   "Maroc", "Fès", "Kénitra", "Marrakech", "Agadir", "Oujda", "Chagar", "Ecolabel", "Covid"];
-const ACRONYMES = /\b(colorado|dgi|iso|qse|hqe|ago|pdg|rse|onssa|cndp)\b/gi;
+const ACRONYMES = /\b(colorado|dgi|iso|qse|hqe|ago|agm|pdg|rse|onssa|cndp)\b/gi;
 
 // « RÉAMÉNAGEMENT DU SITE » -> « Réaménagement du site » (les titres du site sont parfois tout en majuscules)
 export function titre(s) {
@@ -54,8 +54,8 @@ export function categorieActualite(t) {
 }
 
 export function typeCommunique(t) {
-  if (/semestriel/i.test(t)) return "Semestriel";
-  if (/ago|assembl/i.test(t)) return "Assemblée générale";
+  if (/semestriel/i.test(t)) return "Communication semestrielle";
+  if (/\bag[om]\b|assembl/i.test(t)) return "Assemblée générale";
   if (/trimestriel|\bT[1-4]\b/i.test(t)) return "Indicateurs trimestriels";
   if (/annuel|résultats|resultats/i.test(t)) return "Résultats annuels";
   return "Autre";
@@ -96,6 +96,15 @@ function lireListeFinance(doc) {
 
 export function lireCommuniques(doc) {
   return lireListeFinance(doc).map(c => ({ ...c, type: typeCommunique(c.titre) }));
+}
+
+// /corporate/fr/etats-financiers : rapports financiers annuels et semestriels
+export function lireEtatsFinanciers(doc) {
+  return lireListeFinance(doc).map(r => ({
+    ...r,
+    type: /semestriel|\b1S\d{4}/i.test(r.titre) ? "Semestriel" : "Annuel",
+    annee: Number((r.titre.match(/(20\d\d)/) || [])[1]) || null
+  }));
 }
 
 export function lireRapports(doc) {
