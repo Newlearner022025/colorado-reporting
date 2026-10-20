@@ -1,0 +1,378 @@
+{
+  "maj": "2026-10-20T10:45:44.959Z",
+  "action": {
+    "cours": 73,
+    "variation": -4.24
+  },
+  "chiffres": [
+    {
+      "valeur": "624",
+      "unite": "MDH",
+      "libelle": "Chiffre d’affaires (CA en MDH) en 2025"
+    },
+    {
+      "valeur": "65.5",
+      "unite": "MDH",
+      "libelle": "Résultat Net (RN en MDH) en 2025"
+    },
+    {
+      "valeur": "9",
+      "unite": null,
+      "libelle": "Showrooms et Agences"
+    },
+    {
+      "valeur": "22",
+      "unite": null,
+      "libelle": "Partenaires à l'export"
+    },
+    {
+      "valeur": "1500",
+      "unite": null,
+      "libelle": "Revendeurs agrées (90% de drogueries)"
+    },
+    {
+      "valeur": "216",
+      "unite": null,
+      "libelle": "Collaborateurs permanents en 2025"
+    }
+  ],
+  "actualites": [
+    {
+      "date": "2024-07-20",
+      "categorie": "Entreprise",
+      "titre": "Renouvellement de la convention de catégorisation fiscale avec la DGI",
+      "extrait": "COLORADO a obtenu le renouvellement de son statut de « contribuable catégorisé » octroyé depuis 2014. COLORADO est la seule société dans le secteur de la peinture ayant...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.20.37.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-de-la-convention-de-categorisation-fiscale-avec-la-dgi"
+    },
+    {
+      "date": "2024-07-08",
+      "categorie": "Certifications",
+      "titre": "Renouvellement des certifications ISO",
+      "extrait": "COLORADO, la seule entreprise quadruplement certifiée dans le secteur de la peinture, a réussi le renouvellement de ses certifications selon les référentiels ISO 45001:2018 et...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.14.21.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-des-certifications-iso-0"
+    },
+    {
+      "date": "2024-05-16",
+      "categorie": "Événements",
+      "titre": "Participation au forum international de la chimie",
+      "extrait": "COLORADO a pris part à la deuxième édition du Forum International de la Chimie, un événement d’envergure organisé par la Fédération de la Chimie et de la Parachimie (FCP), en...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.16.07.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-forum-international-de-la-chimie"
+    },
+    {
+      "date": "2024-04-16",
+      "categorie": "Entreprise",
+      "titre": "Réaménagement du site de dar bouazza",
+      "extrait": "Dans une démarche d’amélioration continue de ses infrastructures, COLORADO a entrepris le réaménagement d’une partie de son site de Dar Bouazza. Ce projet avait pour objectif d...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.23.51.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/reamenagement-du-site-de-dar-bouazza"
+    },
+    {
+      "date": "2024-03-01",
+      "categorie": "Gouvernance",
+      "titre": "Nomination de m. chagar en tant que PDG",
+      "extrait": "En mars 2024, COLORADO a procédé à la nomination de M. Abed Chagar au poste de Président-Directeur Général, fonction qu’il occupe désormais après avoir exercé celle de...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.12.04.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/nomination-de-m-chagar-en-tant-que-pdg"
+    },
+    {
+      "date": "2023-04-10",
+      "categorie": "Certifications",
+      "titre": "Certification HQE (Haute Qualité Environnementale)",
+      "extrait": "COLORADO est la première entreprise de peinture Marocaine à obtenir en 2023 la certification HQE (Haute Qualité Environnementale) qui s’applique aux bâtiments. Cette...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.06.32.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/certification-hqe-haute-qualite-environnementale"
+    },
+    {
+      "date": "2023-03-10",
+      "categorie": "Entreprise",
+      "titre": "Amélioration continue",
+      "extrait": "En marge de l’amélioration de ses performances opérationnelles et la maîtrise des consommations énergétiques, COLORADO a entrepris plusieurs actions à fort impact notamment sur...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_10.02.27.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/amelioration-continue"
+    },
+    {
+      "date": "2023-02-16",
+      "categorie": "Certifications",
+      "titre": "Renouvellement des certifications ISO",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2025-04-16_at_09.57.47.png",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-des-certifications-iso"
+    },
+    {
+      "date": "2022-12-22",
+      "categorie": "Certifications",
+      "titre": "COLORADO certifiée ISO 27001",
+      "extrait": "Gage de sécurité pour ses données et son système d'information.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/iso_27001_c2_modif_5_x.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifiee-iso-27001"
+    },
+    {
+      "date": "2022-08-31",
+      "categorie": "Certifications",
+      "titre": "Renouvellement certifications QSE",
+      "extrait": "Colorado a réussi avec succès son audit de renouvellement de certification QSE qui s'est déroulé du 26 au 28 Juillet 2022 et réalisé par un organisme...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/iso_0_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-certifications-qse-0"
+    },
+    {
+      "date": "2022-07-07",
+      "categorie": "Entreprise",
+      "titre": "Renouvellement \"Statut d’Opérateur Économique Agréé Sécurité et sureté\"",
+      "extrait": "...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/2022-06-03_certificat_oea_ss_renouvellement_page-0001.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-statut-doperateur-economique-agree-securite-et-surete"
+    },
+    {
+      "date": "2021-12-23",
+      "categorie": "Entreprise",
+      "titre": "COLORADO : Top Performers 2021",
+      "extrait": "...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/certificat_top_performers_2021_colarodo.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-top-performers-2021"
+    },
+    {
+      "date": "2021-08-02",
+      "categorie": "Entreprise",
+      "titre": "Inauguration d’un nouveau show-room à fès",
+      "extrait": "...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/dsc_7084.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/inauguration-dun-nouveau-show-room-fes"
+    },
+    {
+      "date": "2021-06-16",
+      "categorie": "Certifications",
+      "titre": "Renouvellement certifications QSE",
+      "extrait": "Colorado a réussi avec succès son renouvellement de certification QSE avec...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/iso_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-certifications-qse"
+    },
+    {
+      "date": "2021-03-09",
+      "categorie": "Entreprise",
+      "titre": "COLORADO Certifée @@@ pour la 7ème année consécutive",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/exe_coface_2021-01_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifee-pour-la-7eme-annee-consecutive"
+    },
+    {
+      "date": "2021-02-05",
+      "categorie": "Certifications",
+      "titre": "Renouvellement reussi de la certification ecolabel",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_decran_2021-06-09_a_09.56.18.jpeg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-reussi-de-la-certification-ecolabel"
+    },
+    {
+      "date": "2020-09-01",
+      "categorie": "Certifications",
+      "titre": "Renouvellement certifications",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/iso.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/renouvellement-certifications"
+    },
+    {
+      "date": "2020-08-17",
+      "categorie": "Entreprise",
+      "titre": "COLORADO Certifée @@@ pour la 6ème année consécutive",
+      "extrait": "Colorado vient d’être certifiée triple A pour l’année 2020 par Coface. L’assureur crédit reconfirme ainsi par cette note « la solvabilité et la fiabilité » du spécialiste de la...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2020_br.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifee-pour-la-6eme-annee-consecutive"
+    },
+    {
+      "date": "2020-05-17",
+      "categorie": "Entreprise",
+      "titre": "Mesures Anti-Covid-19 prises par COLORADO",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/mesures-anti-covid-19-prises-par-colorado"
+    }
+  ],
+  "communiques": [
+    {
+      "date": "2026-09-25",
+      "titre": "Communication financière semestrielle au 30-06-2026",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_semestrielle_au_30-06-2026.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communication_financiere_semestrielle_au_30-06-2026.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2026",
+      "type": "Semestriel",
+      "taille": 2.6
+    },
+    {
+      "date": "2026-05-18",
+      "titre": "Communiqué post AGO du 15/05/2026",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_post_ago_du_15-05-2026.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/communique_post_ago_du_15-05-2026.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-ago-du-15052026",
+      "type": "Assemblée générale",
+      "taille": 1.8
+    },
+    {
+      "date": "2026-04-09",
+      "titre": "Communiqué Financier Annuel 2025 : Résultats Annuels",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_financier_des_resultats_annuels_2025.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/image_communique_annuel_2025_1.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-annuel-2025-resultats-annuels",
+      "type": "Résultats annuels",
+      "taille": 5.8
+    },
+    {
+      "date": "2026-03-10",
+      "titre": "Communiqué financier : résultats annuels 2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cfa-resultats_2025.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cfa-2025.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2025",
+      "type": "Résultats annuels",
+      "taille": 27.9
+    },
+    {
+      "date": "2025-09-22",
+      "titre": "Communication financière semestrielle au 30-06-2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communication_financiere_2025_vf_au_30-06-2025.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/com30062025.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communication-financiere-semestrielle-au-30-06-2025",
+      "type": "Semestriel",
+      "taille": 3
+    },
+    {
+      "date": "2025-05-19",
+      "titre": "Communiqué post AGO du 15/05/2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/colorado_cp_ago_15052025_0.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cp_ago_15-05-2025_0.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-post-ago-du-15052025",
+      "type": "Assemblée générale",
+      "taille": 0.3
+    },
+    {
+      "date": "2025-04-28",
+      "titre": "Communiqué Financier Annuel 2024 : Résultats Annuels",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_rfa_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ig_cf_rf_2024.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-annuel-2024-resultats-annuels",
+      "type": "Résultats annuels",
+      "taille": 55.3
+    },
+    {
+      "date": "2025-03-20",
+      "titre": "Communiqué financier : résultats annuels 2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_p-ca_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/img_cf_ca_180325.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-resultats-annuels-2024",
+      "type": "Résultats annuels",
+      "taille": 0.8
+    },
+    {
+      "date": "2025-02-18",
+      "titre": "Indicateurs Trimestriels : T4-2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_communique_de_presse_t4_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/com_indt4_2024.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t4-2024",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.5
+    },
+    {
+      "date": "2024-11-15",
+      "titre": "Indicateurs Trimestriels : T3-2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/cf_ind_t3_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ind_t3_2024.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t3-2024",
+      "type": "Indicateurs trimestriels",
+      "taille": 2.2
+    }
+  ],
+  "rapports": [
+    {
+      "date": "2026-05-04",
+      "titre": "Rapport annuel 2025",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/exe_final_rapport_annuel_2025_version_fr_non_vectorise_avec_correction_22052026.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/screenshot_2026-05-04_at_14.26.56.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2025",
+      "annee": 2025,
+      "taille": 6.6
+    },
+    {
+      "date": "2025-06-18",
+      "titre": "Rapport annuel 2024",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapport_annuel_2024.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/rapport_annuel_2024.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2024",
+      "annee": 2024,
+      "taille": 10.6
+    },
+    {
+      "date": "2024-06-26",
+      "titre": "Rapport annuel 2023",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rap_ann_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/rapp_ann_fr.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2023",
+      "annee": 2023,
+      "taille": 16.9
+    },
+    {
+      "date": "2023-06-12",
+      "titre": "Rapport Annuel 2022",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapport_annuel.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/couverture_ra_fr.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2022",
+      "annee": 2022,
+      "taille": 12.5
+    },
+    {
+      "date": "2022-06-13",
+      "titre": "Rapport Annuel 2021",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2021_version_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ra_2021.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2021",
+      "annee": 2021,
+      "taille": 8.4
+    },
+    {
+      "date": "2021-06-04",
+      "titre": "Rapport Annuel 2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2020_version_fr_lt.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/couv_fr_.jpeg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2020",
+      "annee": 2020,
+      "taille": 7.8
+    },
+    {
+      "date": "2020-06-22",
+      "titre": "Rapport Annuel 2019",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2019_fr.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/ra_fr_2019.png",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2019",
+      "annee": 2019,
+      "taille": 7
+    },
+    {
+      "date": "2019-05-16",
+      "titre": "Rapport annuel 2018",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2018_word.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/rapport.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2018",
+      "annee": 2018,
+      "taille": 4.1
+    },
+    {
+      "date": "2018-06-28",
+      "titre": "Rapport annuel 2017",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2017.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/rapport-site.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2017",
+      "annee": 2017,
+      "taille": 6.8
+    },
+    {
+      "date": "2016-12-31",
+      "titre": "Rapport annuel 2016",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/rapportannuel_2016_fr_web.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/rapportannuel_2016_fr_web_cover-001.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/rapports/rapport-annuel-2016",
+      "annee": 2016,
+      "taille": 6.2
+    }
+  ],
+  "erreurs": []
+}
