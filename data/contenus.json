@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-21T18:59:49.140Z",
+  "maj": "2026-10-22T01:02:01.918Z",
   "action": {
     "cours": 73,
     "variation": -4
@@ -1023,21 +1023,21 @@
     },
     {
       "date": "2020-05-27",
-      "titre": "Indicateurs Trimestriels : T1-2020",
-      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst1_2020.pdf",
-      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t1_2020.png",
-      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2020",
-      "type": "Indicateurs trimestriels",
-      "taille": 0.1
-    },
-    {
-      "date": "2020-05-27",
       "titre": "Communiqué financier relatif au conseil d'administration du 22 Mai",
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_financier_2019-postca.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-postca22mai.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-relatif-au-conseil-dadministration-du-22-mai",
       "type": "Capital et gouvernance",
       "taille": 0.2
+    },
+    {
+      "date": "2020-05-27",
+      "titre": "Indicateurs Trimestriels : T1-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst1_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t1_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.1
     },
     {
       "date": "2020-04-29",
