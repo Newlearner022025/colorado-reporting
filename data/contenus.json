@@ -1,8 +1,8 @@
 {
-  "maj": "2026-10-23T15:54:43.729Z",
+  "maj": "2026-10-23T18:58:15.741Z",
   "action": {
-    "cours": 73.55,
-    "variation": -3.46
+    "cours": 75,
+    "variation": 1.45
   },
   "chiffres": [
     {
@@ -1951,19 +1951,19 @@
     },
     {
       "date": "2018-05-11",
-      "categorie": "Finance",
-      "titre": "Colorado's 2017 results",
-      "extrait": null,
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
-      "lien": "https://www.colorado.ma/corporate/en/news/colorados-2017-results"
-    },
-    {
-      "date": "2018-05-11",
       "categorie": "Company",
       "titre": "Authorised economic operator",
       "extrait": null,
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
       "lien": "https://www.colorado.ma/corporate/en/news/authorised-economic-operator"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Finance",
+      "titre": "Colorado's 2017 results",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
+      "lien": "https://www.colorado.ma/corporate/en/news/colorados-2017-results"
     },
     {
       "date": "2018-04-28",
