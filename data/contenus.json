@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-27T01:07:28.724Z",
+  "maj": "2026-10-27T03:52:23.543Z",
   "action": {
     "cours": 76.5,
     "variation": 0.51
@@ -2159,19 +2159,19 @@
     },
     {
       "date": "2016-01-01",
-      "categorie": "Certifications",
-      "titre": "Colorado is certified @@@ by Coface for 2016",
-      "extrait": "COLORADO, leader in the paint industry in Morocco, had been certified « @@@» for the year 2016 by the COFACE for the second consecutive year. With this certification, COFACE confirms the solvency and reliability of COLORADO towards its trading partners.",
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_1.jpg",
-      "lien": "https://www.colorado.ma/corporate/en/news/colorado-certified-coface-2016"
-    },
-    {
-      "date": "2016-01-01",
       "categorie": "Events",
       "titre": "Participation at ARCHIBAT 2015 Fair",
       "extrait": "COLORADO has participated from the 1st to the 5th of December at ARCHIBAT 2015 Fair held in Abidjan (Côte d'Ivoire) in its fifth edition. The fair is the largest...",
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/63450_058.jpg",
       "lien": "https://www.colorado.ma/corporate/en/news/participation-archibat-2015-fair"
+    },
+    {
+      "date": "2016-01-01",
+      "categorie": "Certifications",
+      "titre": "Colorado is certified @@@ by Coface for 2016",
+      "extrait": "COLORADO, leader in the paint industry in Morocco, had been certified « @@@» for the year 2016 by the COFACE for the second consecutive year. With this certification, COFACE confirms the solvency and reliability of COLORADO towards its trading partners.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_1.jpg",
+      "lien": "https://www.colorado.ma/corporate/en/news/colorado-certified-coface-2016"
     },
     {
       "date": "2015-11-26",
