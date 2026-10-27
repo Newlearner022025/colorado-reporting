@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-27T13:06:36.359Z",
+  "maj": "2026-10-27T16:00:36.110Z",
   "action": {
     "cours": 76.5,
     "variation": 0.51
@@ -279,19 +279,19 @@
     },
     {
       "date": "2018-05-11",
-      "categorie": "Entreprise",
-      "titre": "Opérateur economique agréé",
-      "extrait": "Après avoir obtenu en 2012, le statut d’Opérateur agréé : simplification douanière,...",
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
-      "lien": "https://www.colorado.ma/corporate/fr/actualites/operateur-economique-agree"
-    },
-    {
-      "date": "2018-05-11",
       "categorie": "Finance",
       "titre": "COLORADO présente ses résultats 2017",
       "extrait": null,
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Entreprise",
+      "titre": "Opérateur economique agréé",
+      "extrait": "Après avoir obtenu en 2012, le statut d’Opérateur agréé : simplification douanière,...",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/operateur-economique-agree"
     },
     {
       "date": "2018-04-28",
@@ -495,19 +495,19 @@
     },
     {
       "date": "2016-01-01",
-      "categorie": "Certifications",
-      "titre": "Colorado certifiée @@@ par la Coface pour la 2ème année consécutive",
-      "extrait": "COLORADO, leader de la peinture au Maroc, a été certifiée « @@@» pour l’année 2016 par la COFACE (Compagnie française d'assurance crédit à l'exportation) pour la 2ème année consécutive.",
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_0.jpg",
-      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifi-aaa-par-la-coface"
-    },
-    {
-      "date": "2016-01-01",
       "categorie": "Événements",
       "titre": "Participation au salon ARCHIBAT 2015",
       "extrait": "COLORADO a participé du 01 au 05 Décembre à Abidjan au salon ARCHIBAT – Salon des innovations pour le bâtiment et l'architecture.",
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/63450_058.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/actualites/participation-au-salon-archibat-2015"
+    },
+    {
+      "date": "2016-01-01",
+      "categorie": "Certifications",
+      "titre": "Colorado certifiée @@@ par la Coface pour la 2ème année consécutive",
+      "extrait": "COLORADO, leader de la peinture au Maroc, a été certifiée « @@@» pour l’année 2016 par la COFACE (Compagnie française d'assurance crédit à l'exportation) pour la 2ème année consécutive.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_0.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-certifi-aaa-par-la-coface"
     },
     {
       "date": "2015-12-15",
