@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-27T09:56:55.766Z",
+  "maj": "2026-10-27T13:06:36.359Z",
   "action": {
     "cours": 76.5,
     "variation": 0.51
@@ -279,19 +279,19 @@
     },
     {
       "date": "2018-05-11",
-      "categorie": "Finance",
-      "titre": "COLORADO présente ses résultats 2017",
-      "extrait": null,
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
-      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
-    },
-    {
-      "date": "2018-05-11",
       "categorie": "Entreprise",
       "titre": "Opérateur economique agréé",
       "extrait": "Après avoir obtenu en 2012, le statut d’Opérateur agréé : simplification douanière,...",
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/actualites/operateur-economique-agree"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Finance",
+      "titre": "COLORADO présente ses résultats 2017",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
     },
     {
       "date": "2018-04-28",
@@ -2159,19 +2159,19 @@
     },
     {
       "date": "2016-01-01",
-      "categorie": "Certifications",
-      "titre": "Colorado is certified @@@ by Coface for 2016",
-      "extrait": "COLORADO, leader in the paint industry in Morocco, had been certified « @@@» for the year 2016 by the COFACE for the second consecutive year. With this certification, COFACE confirms the solvency and reliability of COLORADO towards its trading partners.",
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_1.jpg",
-      "lien": "https://www.colorado.ma/corporate/en/news/colorado-certified-coface-2016"
-    },
-    {
-      "date": "2016-01-01",
       "categorie": "Events",
       "titre": "Participation at ARCHIBAT 2015 Fair",
       "extrait": "COLORADO has participated from the 1st to the 5th of December at ARCHIBAT 2015 Fair held in Abidjan (Côte d'Ivoire) in its fifth edition. The fair is the largest...",
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/63450_058.jpg",
       "lien": "https://www.colorado.ma/corporate/en/news/participation-archibat-2015-fair"
+    },
+    {
+      "date": "2016-01-01",
+      "categorie": "Certifications",
+      "titre": "Colorado is certified @@@ by Coface for 2016",
+      "extrait": "COLORADO, leader in the paint industry in Morocco, had been certified « @@@» for the year 2016 by the COFACE for the second consecutive year. With this certification, COFACE confirms the solvency and reliability of COLORADO towards its trading partners.",
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/coface_2016_1.jpg",
+      "lien": "https://www.colorado.ma/corporate/en/news/colorado-certified-coface-2016"
     },
     {
       "date": "2015-11-26",
