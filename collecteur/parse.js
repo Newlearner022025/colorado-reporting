@@ -74,23 +74,46 @@ const LIBELLES = {
 };
 const libelle = (cle, langue) => LIBELLES[cle][langue === "en" ? 1 : 0];
 
+// Mots-clés de classement, dans l'ordre de priorité. En anglais, mots entiers uniquement :
+// sinon « iso » se trouve dans « comparison », « board » dans « dashboard »…
+const CATEGORIES = {
+  fr: [
+    ["certifications", /certifi|iso|hqe|qse/i],
+    ["evenements", /forum|salon|foire|participation|journée|journee/i],
+    ["gouvernance", /nomination|pdg|conseil d.administration|gouvernance/i],
+    ["finance", /communication financi|ago|résultats|resultats|communiqué|communique/i]
+  ],
+  en: [
+    ["certifications", /certifi|\biso\b|\bhqe\b|\bqse\b|ecolabel|ecoloabel|\boea\b|@@@/i],
+    ["evenements", /\bforum\b|\bsalon\b|\bfoire\b|participation|exhibition|\bfairs?\b|\bexpo\b|\bshow\b|\bevents?\b| @ /i],
+    ["gouvernance", /appointment|\bceo\b|\bboard\b|governance/i],
+    ["finance", /financial|\bresults\b|press release|stock exchange|\bcapital\b|\bago\b/i]
+  ]
+};
+const TYPES = {
+  fr: [
+    ["semestrielle", /semestriel|30[\/-]06/i],
+    ["assemblee", /\bag[om]\b|assembl/i],
+    ["trimestriels", /trimestriel|\bT[1-4]\b/i],
+    ["annuels", /annuel|résultats|resultats|31[\/-]12/i],
+    ["capital", /capital|conseil d.administration/i]
+  ],
+  en: [
+    ["semestrielle", /half-year|half year|june\s*30|30[\/-]06/i],
+    ["assemblee", /\bag[om]\b|general meeting/i],
+    ["trimestriels", /quarterly|\b[QT][1-4]\b/i],
+    ["annuels", /annual|\bresults\b|dec\.?\s*31|31[\/-]12/i],
+    ["capital", /\bcapital\b|\bboard\b/i]
+  ]
+};
+const classer = (regles, t, defaut) => (regles.find(([, re]) => re.test(t)) || [defaut])[0];
+
 export function categorieActualite(t, langue = "fr") {
-  const en = langue === "en";
-  if (/certifi|iso|hqe|qse/i.test(t) || (en && /ecolabel|ecoloabel|\boea\b|@@@/i.test(t))) return libelle("certifications", langue);
-  if (/forum|salon|foire|participation|journée|journee/i.test(t) || (en && /exhibition|\bfair\b|\bexpo\b|\bshow\b|\bevent\b| @ /i.test(t))) return libelle("evenements", langue);
-  if (/nomination|pdg|conseil d.administration|gouvernance/i.test(t) || (en && /appointment|\bceo\b|board|governance/i.test(t))) return libelle("gouvernance", langue);
-  if (/communication financi|ago|résultats|resultats|communiqué|communique/i.test(t) || (en && /financial|results|press release|stock exchange|capital/i.test(t))) return libelle("finance", langue);
-  return libelle("entreprise", langue);
+  return libelle(classer(CATEGORIES[langue === "en" ? "en" : "fr"], t, "entreprise"), langue);
 }
 
 export function typeCommunique(t, langue = "fr") {
-  const en = langue === "en";
-  if (/semestriel|30[\/-]06/i.test(t) || (en && /half-year|june\s*30/i.test(t))) return libelle("semestrielle", langue);
-  if (/\bag[om]\b|assembl/i.test(t) || (en && /general meeting/i.test(t))) return libelle("assemblee", langue);
-  if (/trimestriel|\bT[1-4]\b/i.test(t) || (en && /quarterly|\bQ[1-4]\b/i.test(t))) return libelle("trimestriels", langue);
-  if (/annuel|résultats|resultats|31[\/-]12/i.test(t) || (en && /annual|results|dec\.?\s*31/i.test(t))) return libelle("annuels", langue);
-  if (/capital|conseil d.administration/i.test(t) || (en && /board/i.test(t))) return libelle("capital", langue);
-  return libelle("autres", langue);
+  return libelle(classer(TYPES[langue === "en" ? "en" : "fr"], t, "autres"), langue);
 }
 
 // /corporate/fr/actualites et /corporate/en/news

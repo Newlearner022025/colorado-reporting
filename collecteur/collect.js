@@ -72,6 +72,7 @@ async function main() {
     }
   }
 
+  let coursFrais = false; // cours de l'action lu sur la page française lors de ce passage
   for (const langue of ["fr", "en"]) {
     const c = CHEMINS[langue];
     const s = langue === "fr" ? "" : "_en"; // suffixe des rubriques anglaises
@@ -79,8 +80,9 @@ async function main() {
 
     const accueil = await page(c.accueil).then(lire(lireAccueil)).catch(e => { erreurs.push(`accueil${s} : ${e.message}`); return {}; });
     // Le cours de l'action est le même dans les deux langues : on le prend en français, ou en anglais à défaut
-    if (langue === "fr") await rubrique("action", async () => accueil.action);
-    else if (!resultats.action && accueil.action) resultats.action = accueil.action;
+    // (un cours tout juste lu en anglais vaut mieux que l'ancien cours gardé quand la page française est en panne)
+    if (langue === "fr") { await rubrique("action", async () => accueil.action); coursFrais = !!accueil.action; }
+    else if (!coursFrais && accueil.action) resultats.action = accueil.action;
     await rubrique("chiffres" + s, async () => accueil.chiffres);
 
     await rubrique("actualites" + s, async () =>
