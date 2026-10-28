@@ -186,8 +186,10 @@
     "Pointe-Noire · Congo", "Kado Abuja · Nigeria", "Abuja · Nigeria", "Warrant · Nigeria", "Victoria Island · Nigeria"];
   const T = Donnees.T;
   const pretty = t => t.replace(/^\+212(\d)(\d{2})(\d{2})(\d{2})(\d{2})$/, "+212 $1$2 $3 $4 $5");
-  // « Agence Oujda » -> « Branch Oujda » (les adresses restent telles quelles)
-  const nomSite = n => n.replace(/^(Agence et showroom|Plateforme logistique|Showroom|Agence|Usine)/, m => T(m));
+  // En anglais, le lieu passe devant : « Agence Oujda » -> « Oujda branch », « Showroom Casablanca · CIL » -> « Casablanca showroom · CIL »
+  // (les adresses restent telles quelles)
+  const nomSite = n => Donnees.langue !== "en" ? n :
+    n.replace(/^(Agence et showroom|Plateforme logistique|Showroom|Agence|Usine) ([^·]+?)(\s·.*)?$/, (_, type, lieu, suite = "") => `${lieu} ${T(type).toLowerCase()}${suite}`);
   if (Donnees.langue === "en") document.getElementById("siteWeb").href = "https://www.colorado.ma/corporate/en";
   document.getElementById("sites").innerHTML = Object.entries(SITES).map(([g, list], i) => `
     <details ${i === 0 ? "open" : ""}><summary>${T(g)} (${list.length})</summary><div class="sr">
