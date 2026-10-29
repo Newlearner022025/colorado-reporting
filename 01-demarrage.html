@@ -13,7 +13,8 @@
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #e9e7e4; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: #1f2329; }
-  .phone { max-width: 420px; height: 100vh; min-height: 640px; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
+  /* 100dvh : hauteur réellement visible (Chrome compte la barre d'adresse dans 100vh et coupait le bas de l'écran) */
+  .phone { max-width: 420px; height: 100vh; height: 100dvh; min-height: 540px; margin: 0 auto; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
 
   /* Mosaïque recomposée à partir des 4 photos d'origine de la couverture du rapport annuel 2024 */
   .photo { position: relative; flex: 1 1 64%; background: #fff; }
