@@ -101,15 +101,6 @@
   nav a { flex: 1; text-align: center; padding: 9px 0 12px; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
   nav svg { display: block; margin: 0 auto 3px; width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.6; }
   nav a.on { color: var(--red); font-weight: 600; }
-
-  /* Bandeau « Installer l'appli » */
-  .install { display: flex; align-items: center; gap: 10px; margin: 14px 20px 0; padding: 10px 10px 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); }
-  .install[hidden] { display: none; }
-  .install img { width: 40px; height: 40px; border-radius: 9px; border: 1px solid var(--line); background: #fff; flex-shrink: 0; }
-  .install .t { flex: 1; font-size: 12px; color: var(--muted); line-height: 1.35; }
-  .install .t b { display: block; color: var(--ink); font-size: 13px; }
-  .install .go { background: var(--red); color: #fff; border: none; border-radius: 4px; padding: 8px 12px; font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
-  .install .x { background: none; border: none; color: var(--muted); font-size: 20px; line-height: 1; padding: 0 2px; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -119,13 +110,6 @@
     <div class="hello" data-t>Espace Corporate<b data-t>Bonjour</b></div>
     <a class="ic" data-t href="03-actualites.html#recherche" title="Rechercher une actualité"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></a>
   </header>
-
-  <div class="install" id="install" hidden>
-    <img src="images/icone-192.png" alt="">
-    <div class="t"><b data-t>Installer l'appli Colorado</b><span id="installTexte" data-t>Accès direct depuis l'écran d'accueil, même sans connexion.</span></div>
-    <button class="go" id="installBtn" data-t>Installer</button>
-    <button class="x" id="installFermer" aria-label="Fermer" data-t>×</button>
-  </div>
 
   <div class="slider" id="slider">
     <div class="slide on" style="background-image:url('https://www.colorado.ma/corporate/sites/default/files/bandeau-corpo.jpg')">
@@ -222,26 +206,6 @@
 <script src="donnees.js"></script>
 <script>
   const { esc, date, nombre, T, champ } = Donnees;
-
-  // Bandeau d'installation : caché si l'appli est déjà installée ou si on l'a fermé
-  (() => {
-    const bandeau = document.getElementById("install");
-    let ferme = false; try { ferme = localStorage.getItem("colorado-reporting:install-ferme") === "1"; } catch {}
-    if (Installation.installee || ferme) return;
-    const btn = document.getElementById("installBtn");
-    if (Installation.iphone) {
-      document.getElementById("installTexte").textContent = T("Touchez Partager, puis « Sur l'écran d'accueil ».");
-      btn.hidden = true;
-      bandeau.hidden = false;
-    } else {
-      Installation.quandPossible(() => { bandeau.hidden = false; });
-    }
-    btn.onclick = async () => { if (await Installation.lancer()) bandeau.hidden = true; };
-    document.getElementById("installFermer").onclick = () => {
-      bandeau.hidden = true;
-      try { localStorage.setItem("colorado-reporting:install-ferme", "1"); } catch {}
-    };
-  })();
   const DL = `<svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>`;
 
   // Défilement automatique du carrousel « À la une »
