@@ -1,5 +1,5 @@
 {
-  "maj": "2026-11-02T01:27:12.097Z",
+  "maj": "2026-11-02T07:43:45.956Z",
   "action": {
     "cours": 72,
     "variation": -1
@@ -1023,21 +1023,21 @@
     },
     {
       "date": "2020-05-27",
-      "titre": "Indicateurs Trimestriels : T1-2020",
-      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst1_2020.pdf",
-      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t1_2020.png",
-      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2020",
-      "type": "Indicateurs trimestriels",
-      "taille": 0.1
-    },
-    {
-      "date": "2020-05-27",
       "titre": "Communiqué financier relatif au conseil d'administration du 22 Mai",
       "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/communique_financier_2019-postca.pdf",
       "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/cf-postca22mai.png",
       "lien": "https://www.colorado.ma/corporate/fr/communiques/communique-financier-relatif-au-conseil-dadministration-du-22-mai",
       "type": "Capital et gouvernance",
       "taille": 0.2
+    },
+    {
+      "date": "2020-05-27",
+      "titre": "Indicateurs Trimestriels : T1-2020",
+      "pdf": "https://www.colorado.ma/corporate/sites/default/files/documents/indicateurst1_2020.pdf",
+      "apercu": "https://www.colorado.ma/corporate/sites/default/files/photos/t1_2020.png",
+      "lien": "https://www.colorado.ma/corporate/fr/communiques/indicateurs-trimestriels-t1-2020",
+      "type": "Indicateurs trimestriels",
+      "taille": 0.1
     },
     {
       "date": "2020-04-29",
@@ -1951,19 +1951,19 @@
     },
     {
       "date": "2018-05-11",
-      "categorie": "Finance",
-      "titre": "Colorado's 2017 results",
-      "extrait": null,
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
-      "lien": "https://www.colorado.ma/corporate/en/news/colorados-2017-results"
-    },
-    {
-      "date": "2018-05-11",
       "categorie": "Company",
       "titre": "Authorised economic operator",
       "extrait": null,
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
       "lien": "https://www.colorado.ma/corporate/en/news/authorised-economic-operator"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Finance",
+      "titre": "Colorado's 2017 results",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
+      "lien": "https://www.colorado.ma/corporate/en/news/colorados-2017-results"
     },
     {
       "date": "2018-04-28",
