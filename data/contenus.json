@@ -1,5 +1,5 @@
 {
-  "maj": "2026-11-06T04:11:37.472Z",
+  "maj": "2026-11-06T07:34:43.122Z",
   "action": {
     "cours": 73.88,
     "variation": 1.48
@@ -279,19 +279,19 @@
     },
     {
       "date": "2018-05-11",
-      "categorie": "Finance",
-      "titre": "COLORADO présente ses résultats 2017",
-      "extrait": null,
-      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
-      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
-    },
-    {
-      "date": "2018-05-11",
       "categorie": "Entreprise",
       "titre": "Opérateur economique agréé",
       "extrait": "Après avoir obtenu en 2012, le statut d’Opérateur agréé : simplification douanière,...",
       "image": "https://www.colorado.ma/corporate/sites/default/files/photos/operateur_economqiue_agree_actualites.jpg",
       "lien": "https://www.colorado.ma/corporate/fr/actualites/operateur-economique-agree"
+    },
+    {
+      "date": "2018-05-11",
+      "categorie": "Finance",
+      "titre": "COLORADO présente ses résultats 2017",
+      "extrait": null,
+      "image": "https://www.colorado.ma/corporate/sites/default/files/photos/capture_capsule_bourse.jpg",
+      "lien": "https://www.colorado.ma/corporate/fr/actualites/colorado-presente-ses-resultats-2017"
     },
     {
       "date": "2018-04-28",
